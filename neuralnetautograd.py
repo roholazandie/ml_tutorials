@@ -7,8 +7,7 @@ from autograd.scipy.misc import logsumexp
 from autograd import grad
 from autograd.util import flatten
 from autograd.optimizers import adam
-from ss import load_mnist
-
+from mnist_loader import load_data_wrapper
 
 def init_random_params(scale, layer_sizes, rs=npr.RandomState(0)):
     """Build a list of (weights, biases) tuples,
@@ -46,16 +45,19 @@ def accuracy(params, inputs, targets):
 if __name__ == '__main__':
     # Model parameters
     layer_sizes = [784, 200, 100, 10]
-    L2_reg = 1.0
+    L2_reg = 0.1
 
     # Training parameters
     param_scale = 0.1
     batch_size = 256
-    num_epochs = 5
+    num_epochs = 30
     step_size = 0.001
 
     print("Loading training data...")
-    N, train_images, train_labels, test_images,  test_labels = load_mnist()
+    #N, train_images, train_labels, test_images,  test_labels = load_mnist()
+    train_images, train_labels, test_images, test_labels = load_data_wrapper()
+
+
 
     init_params = init_random_params(param_scale, layer_sizes)
 

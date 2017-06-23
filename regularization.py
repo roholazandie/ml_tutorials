@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-regularization = lambda coefficient: np.sum(np.square(coefficient))
-
+L2_regularization = lambda coefficient: np.sum(np.square(coefficient))
+L1_regularization = lambda coefficient: np.sum(np.abs(coefficient))
 
 #Define input array with angles from 60deg to 300deg converted to radians
 x = np.array([i*np.pi/180 for i in range(60,300,4)])
@@ -18,7 +18,7 @@ regs = []
 n = 400
 for i in range(1, n):
     coefficient = np.polyfit(x, y, i)
-    regs.append(regularization(coefficient))
+    regs.append(L2_regularization(coefficient))
 
 regs = np.log(regs)
 print(regs)
