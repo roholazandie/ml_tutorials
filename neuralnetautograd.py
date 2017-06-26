@@ -57,8 +57,6 @@ if __name__ == '__main__':
     #N, train_images, train_labels, test_images,  test_labels = load_mnist()
     train_images, train_labels, test_images, test_labels = load_data_wrapper()
 
-
-
     init_params = init_random_params(param_scale, layer_sizes)
 
     num_batches = int(np.ceil(len(train_images) / batch_size))
@@ -73,6 +71,10 @@ if __name__ == '__main__':
 
     # Get gradient of objective using autograd.
     objective_grad = grad(objective)
+
+
+    m = objective_grad(init_params, 0)
+
 
     print("     Epoch     |    Train accuracy  |       Test accuracy  ")
     def print_perf(params, iter, gradient):
