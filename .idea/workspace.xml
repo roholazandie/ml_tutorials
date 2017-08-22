@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="788c70fc-3751-4db2-805e-7711b89ce98d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/text8.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word2vec_basic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MNIST-data/t10k-images-idx3-ubyte.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MNIST-data/t10k-labels-idx1-ubyte.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MNIST-data/train-images-idx3-ubyte.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MNIST-data/train-labels-idx1-ubyte.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/one_spectral_clustering.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_tutorials/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_tutorials/random_ops_in_tensorflow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_tutorials/tflayers_convolutional_neural_networks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/complex_optimization_using_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/complex_optimization_using_tensorflow.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/deep_neural_network_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/deep_neural_network_tensorflow.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fully_connected_feed.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/fully_connected_feed.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/neural_network_with_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/neural_network_with_tensorflow.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/simpleoptimizationusingtensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/simpleoptimizationusingtensorflow.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,17 +33,34 @@
     <SUITE FILE_PATH="coverage/rnntutorial$optimizationusingtensorflow.coverage" NAME="optimizationusingtensorflow Coverage Results" MODIFIED="1501276039994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$deepneuralnetworktensorflow.coverage" NAME="deepneuralnetworktensorflow Coverage Results" MODIFIED="1501689258765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$logisticautoregexample.coverage" NAME="logisticautoregexample Coverage Results" MODIFIED="1502139759610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$variables_in_tensorflow.coverage" NAME="variables_in_tensorflow Coverage Results" MODIFIED="1503441162933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$tst1.coverage" NAME="tst1 Coverage Results" MODIFIED="1501601403787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$save_restore_variables.coverage" NAME="save_restore_variables Coverage Results" MODIFIED="1503432014290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$neuralnetautograd.coverage" NAME="neuralnetautograd Coverage Results" MODIFIED="1501601840512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$random_ops_in_tensorflow.coverage" NAME="random_ops_in_tensorflow Coverage Results" MODIFIED="1502387080157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$plotlyvisualization.coverage" NAME="plotlyvisualization Coverage Results" MODIFIED="1501522697051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$complexoptimizationusingtensorflow.coverage" NAME="complexoptimizationusingtensorflow Coverage Results" MODIFIED="1501620641450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$fully_connected_feed.coverage" NAME="fully_connected_feed Coverage Results" MODIFIED="1501690463295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$mnistexample.coverage" NAME="mnistexample Coverage Results" MODIFIED="1501177090356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$playingwithtensorflow.coverage" NAME="playingwithtensorflow Coverage Results" MODIFIED="1501274619177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$tflayers_convolutional_neural_networks.coverage" NAME="tflayers_convolutional_neural_networks Coverage Results" MODIFIED="1502301149060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$variable_scopes_tf.coverage" NAME="variable_scopes_tf Coverage Results" MODIFIED="1503442795326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
     <SUITE FILE_PATH="coverage/rnntutorial$manuallinearmodel.coverage" NAME="manuallinearmodel Coverage Results" MODIFIED="1501601504139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$ssss.coverage" NAME="ssss Coverage Results" MODIFIED="1501534149100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="rnntutorial" />
+  </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="415967" />
     <fileColor scope="Non-Project Files (Material Darker)" color="474747" />
@@ -39,106 +69,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="neural_network_with_tensorflow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neural_network_with_tensorflow.py">
+      <file leaf-file-name="variable_scopes_tf.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2080">
-              <caret line="104" column="68" lean-forward="false" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
+            <state relative-caret-position="128">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variables_in_tensorflow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test2.py">
+      <file leaf-file-name="save_restore_variables.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simpleoptimizationusingtensorflow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleoptimizationusingtensorflow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="complex_optimization_using_tensorflow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complex_optimization_using_tensorflow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="word2vec_basic.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/word2vec_basic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
-                <element signature="e#9018#9386#0" expanded="false" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hessian_using_numpy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hessian_using_numpy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="instabilitytest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instabilitytest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logistic_autoreg_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistic_autoreg_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manual_optimization_linear_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manual_optimization_linear_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="neuralnet_autograd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neuralnet_autograd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1118">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -164,6 +124,12 @@
       <find>max_ste</find>
       <find>global</find>
       <find>num_steps</find>
+      <find>tf.app</find>
+      <find>64</find>
+      <find>drop</find>
+      <find>conv2d</find>
+      <find>traini</find>
+      <find>globa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,9 +147,17 @@
         <option value="$PROJECT_DIR$/fully_connected_feed.py" />
         <option value="$PROJECT_DIR$/complexoptimizationusingtensorflow.py" />
         <option value="$PROJECT_DIR$/deepneuralnetworktensorflow.py" />
-        <option value="$PROJECT_DIR$/deep_neural_network_tensorflow.py" />
         <option value="$PROJECT_DIR$/neuralnetworkwithtensorflow.py" />
         <option value="$PROJECT_DIR$/manuallinearmodel.py" />
+        <option value="$PROJECT_DIR$/tflayers_convolutional_neural_networks.py" />
+        <option value="$PROJECT_DIR$/random_ops_in_tensorflow.py" />
+        <option value="$PROJECT_DIR$/deep_neural_network_tensorflow.py" />
+        <option value="$PROJECT_DIR$/variables_in_tensorflow.py" />
+        <option value="$PROJECT_DIR$/save_restore_variables.py" />
+        <option value="$PROJECT_DIR$/variable_scopes_tf.py" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" />
       </list>
     </option>
   </component>
@@ -194,10 +168,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1297" />
-    <option name="height" value="780" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1295" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,17 +201,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnntutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnntutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tensorflow_tutorials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="com&#9;FILE&#9;file:///home/rohola/Codes/Python/rnntutorial/complexoptimizationusingtensorflow.py&#10;full&#9;RUN_CONFIGURATION&#9;fully_connected_feed&#10;mn&#9;FILE&#9;file:///home/rohola/Codes/Python/rnntutorial/mnist_loader.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tensorflow_tutorials" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -250,8 +243,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.word2vec_basic">
-    <configuration default="false" name="neuralnetworkwithtensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.variable_scopes_tf">
+    <configuration default="false" name="tflayers_convolutional_neural_networks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -264,13 +257,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_network_with_tensorflow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/tflayers_convolutional_neural_networks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="deepneuralnetworktensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="random_ops_in_tensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -283,13 +276,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deep_neural_network_tensorflow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/random_ops_in_tensorflow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="fully_connected_feed" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="variables_in_tensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -302,13 +295,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fully_connected_feed.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="logisticautoregexample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="save_restore_variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -321,26 +314,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logistic_autoreg_example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="word2vec_basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="variable_scopes_tf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_tutorials" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word2vec_basic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -550,19 +543,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.neuralnetworkwithtensorflow" />
-      <item index="1" class="java.lang.String" itemvalue="Python.deepneuralnetworktensorflow" />
-      <item index="2" class="java.lang.String" itemvalue="Python.fully_connected_feed" />
-      <item index="3" class="java.lang.String" itemvalue="Python.logisticautoregexample" />
-      <item index="4" class="java.lang.String" itemvalue="Python.word2vec_basic" />
+      <item index="0" class="java.lang.String" itemvalue="Python.tflayers_convolutional_neural_networks" />
+      <item index="1" class="java.lang.String" itemvalue="Python.random_ops_in_tensorflow" />
+      <item index="2" class="java.lang.String" itemvalue="Python.variables_in_tensorflow" />
+      <item index="3" class="java.lang.String" itemvalue="Python.save_restore_variables" />
+      <item index="4" class="java.lang.String" itemvalue="Python.variable_scopes_tf" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.word2vec_basic" />
-        <item index="1" class="java.lang.String" itemvalue="Python.logisticautoregexample" />
-        <item index="2" class="java.lang.String" itemvalue="Python.neuralnetworkwithtensorflow" />
-        <item index="3" class="java.lang.String" itemvalue="Python.fully_connected_feed" />
-        <item index="4" class="java.lang.String" itemvalue="Python.deepneuralnetworktensorflow" />
+        <item index="0" class="java.lang.String" itemvalue="Python.variable_scopes_tf" />
+        <item index="1" class="java.lang.String" itemvalue="Python.variables_in_tensorflow" />
+        <item index="2" class="java.lang.String" itemvalue="Python.save_restore_variables" />
+        <item index="3" class="java.lang.String" itemvalue="Python.random_ops_in_tensorflow" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tflayers_convolutional_neural_networks" />
       </list>
     </recent_temporary>
   </component>
@@ -594,22 +587,38 @@
       <option name="project" value="LOCAL" />
       <updated>1502140224332</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding simple word2vec using tensorflow">
+      <created>1502230284643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1502230284643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1297" height="780" extended-state="6" />
+    <frame x="65" y="-4" width="1295" height="772" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45954692" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37864077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44174758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22257806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23859087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4563107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36028823" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -630,7 +639,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exploring tensorflow optimization" />
     <MESSAGE value="cleaning up the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning up the project" />
+    <MESSAGE value="adding simple word2vec using tensorflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding simple word2vec using tensorflow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,7 +661,7 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fully_connected_feed.py</url>
+          <url>file://$PROJECT_DIR$/tensorflow_tutorials/fully_connected_feed.py</url>
           <line>192</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -665,84 +675,31 @@
           <line>81</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/word2vec_basic.py</url>
-          <line>226</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deep_neural_network_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2900">
-          <caret line="145" column="6" lean-forward="false" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="6" />
-          <folding>
-            <element signature="e#760#798#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/examples/tutorials/mnist/mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2480">
-          <caret line="130" column="4" lean-forward="false" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_network_with_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="99" column="13" lean-forward="false" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deep_neural_network_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/summary/writer/writer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5260">
           <caret line="263" column="6" lean-forward="false" selection-start-line="263" selection-start-column="6" selection-end-line="263" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/fully_connected_feed.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1720">
           <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-          <folding>
-            <element signature="e#760#798#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/complex_optimization_using_tensorflow.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/complex_optimization_using_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1840">
           <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,17 +713,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neural_network_with_tensorflow.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/neural_network_with_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deep_neural_network_tensorflow.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/deep_neural_network_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -774,13 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neural_network_with_tensorflow.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/neural_network_with_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,14 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/random_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-643">
-          <caret line="181" column="4" lean-forward="false" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/variables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -870,18 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/platform/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="1300" column="6" lean-forward="false" selection-start-line="1300" selection-start-column="6" selection-end-line="1300" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="263" column="6" lean-forward="false" selection-start-line="263" selection-start-column="6" selection-end-line="263" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,15 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="293" column="4" lean-forward="false" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deep_neural_network_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,17 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="3761" column="0" lean-forward="false" selection-start-line="3761" selection-start-column="0" selection-end-line="3761" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2900">
-          <caret line="145" column="6" lean-forward="false" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="6" />
-          <folding>
-            <element signature="e#760#798#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,15 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="1051" column="0" lean-forward="false" selection-start-line="1051" selection-start-column="0" selection-end-line="1051" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/examples/tutorials/mnist/mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2480">
-          <caret line="130" column="4" lean-forward="false" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,59 +908,144 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1118">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neural_network_with_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="104" column="68" lean-forward="false" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ssss.py" />
     <entry file="file://$PROJECT_DIR$/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleoptimizationusingtensorflow.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/simpleoptimizationusingtensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complex_optimization_using_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/word2vec_basic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+        <state relative-caret-position="4080">
+          <caret line="217" column="34" lean-forward="true" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
           <folding>
             <element signature="e#9018#9386#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/platform/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/examples/tutorials/mnist/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="98" column="15" lean-forward="false" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="184" column="22" lean-forward="true" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/random_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-643">
+          <caret line="181" column="4" lean-forward="false" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/random_ops_in_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/fully_connected_feed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="128" column="45" lean-forward="false" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/tflayers_convolutional_neural_networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1660">
+          <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="1034" column="19" lean-forward="false" selection-start-line="1034" selection-start-column="19" selection-end-line="1034" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/complex_optimization_using_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/deep_neural_network_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/neural_network_with_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2020">
+          <caret line="104" column="68" lean-forward="false" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
