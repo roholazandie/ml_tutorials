@@ -163,6 +163,25 @@ def variable_and_tensor_difference():
     print(session.run(variable5))
 
 
+def difference_between_placeholder_and_variables():
+    '''
+    A placeholder is used for feeding external data into a Tensorflow computation
+    If you're training a learning algorithm, the clear use case of placeholder is to feed in your
+    training data. The training data isn't stored in the computation graph.
+    How are you going to get it into the graph? By injecting it through a placeholder.
+    A placeholder is basically you telling the graph "I don't have this for you yet.
+    But I'll have it for you when I ask you to run."
+    '''
+    x = tf.placeholder(dtype=tf.float32, shape=(3,), name='x')
+    session = tf.Session()
+    print(session.run(x, feed_dict={x:np.array([2,5,3], dtype=np.float32)}))
+
+    a = tf.Variable(initial_value=np.array([[1, 2], [4, 2]]), dtype=tf.float32, name='a')
+    session = tf.Session()
+    session.run(tf.global_variables_initializer())
+    print(session.run(a))
+
+
 def available_devices(device_name='CPU'):
     local_device_protos = device_lib.list_local_devices()
     return [x.name for x in local_device_protos if x.device_type == device_name]
@@ -173,5 +192,6 @@ if __name__ == "__main__":
     #variable_on_device()
     #initialize_variables()
     #using_variables()
-    variable_and_tensor_difference()
+    #variable_and_tensor_difference()
+    difference_between_placeholder_and_variables()
 
