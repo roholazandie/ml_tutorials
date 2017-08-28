@@ -287,6 +287,25 @@ def tensor_transformation():
             print(session.run(t3))
             print(session.run(t4))
 
+    def strided_slice_tensor():
+        #This is a good way to slice the tensor
+        # we just need to specify the begin and end positions
+        #First example
+        l = tf.Variable([[1,2,3,4],[5,6,7,8]])
+        c = tf.strided_slice(l, [0, 0], [1, 2]) #[1,2]
+        b = tf.strided_slice(l, [0, 0], [2, 3]) #[[1 2 3], [5 6 7]]
+
+        j = tf.Variable([[[12, 1, 1], [2, 2, 2]],
+                         [[3, 3, 3], [4, 4, 4]],
+                         [[5, 5, 5], [6, 6, 6]]])
+        t = tf.strided_slice(j, [0, 0, 0], [3, 2, 2])
+        with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
+            print(sess.run(b))
+            print(sess.run(c))
+            print(sess.run(t))
+
+
     def dynamic_partition_tensor():
         data = [5, 1, 7, 2, 3, 4]
         partitions = [0, 0, 1, 1, 0, 1]
@@ -297,15 +316,16 @@ def tensor_transformation():
             session.run(tf.global_variables_initializer())
             print(session.run(parts))
 
-    to_double_tensor()
-    cast_tensor()
-    reshape_tensor()
-    flatten_tensor()
-    split_tensor()
-    # tile_tensor()
-    concat_tensor()
-    stack_tensors()
-    dynamic_partition_tensor()
+    # to_double_tensor()
+    # cast_tensor()
+    # reshape_tensor()
+    # flatten_tensor()
+    # split_tensor()
+    # # tile_tensor()
+    # concat_tensor()
+    # stack_tensors()
+    strided_slice_tensor()
+    #dynamic_partition_tensor()
 
 
 def tensor_in_tensorflow():
@@ -350,6 +370,6 @@ if __name__ == "__main__":
     # using_variables()
     # variable_and_tensor_difference()
     # difference_between_placeholder_and_variables()
-    # graph_in_tensorflow()
+    graph_in_tensorflow()
     # variables_are_stateful()
-    tensor_transformation()
+    #tensor_transformation()

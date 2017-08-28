@@ -44,5 +44,5 @@ if __name__ == "__main__":
     save_variables save the variables to a directory and then
     restore variables restore them to the variables
     '''
-    #save_variables()
-    restore_variables()
+    save_variables()
+    #restore_variables()
