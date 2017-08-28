@@ -1,6 +1,9 @@
 import tensorflow as tf
 import numpy as np
 
+log_dir = "/home/rohola/tmp/tutorial_log_dir"
+
+
 def save_variables():
     v1 = tf.Variable(tf.random_normal((2,3)), name='v1')
     v2 = tf.Variable(tf.random_normal((2,3)), name='v2')
@@ -15,6 +18,11 @@ def save_variables():
         print(save_path)
         print(session.run(v1))
 
+        # Visualize the graph
+        summary_writer = tf.summary.FileWriter(log_dir, session.graph)
+        summary_writer.flush()
+
+
 
 def restore_variables():
     v1 = tf.Variable(tf.zeros((2,3)), name='var1')
@@ -26,6 +34,10 @@ def restore_variables():
         saver.restore(session, "/tmp/model.ckpt")
         print("Model restored")
         print(session.run(v1))
+
+        # Visualize the graph
+        summary_writer = tf.summary.FileWriter(log_dir, session.graph)
+        summary_writer.flush()
 
 if __name__ == "__main__":
     '''
