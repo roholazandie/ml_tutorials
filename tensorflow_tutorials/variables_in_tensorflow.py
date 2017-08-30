@@ -370,6 +370,6 @@ if __name__ == "__main__":
     # using_variables()
     # variable_and_tensor_difference()
     # difference_between_placeholder_and_variables()
-    graph_in_tensorflow()
-    # variables_are_stateful()
+    # graph_in_tensorflow()
+    variables_are_stateful()
     #tensor_transformation()
