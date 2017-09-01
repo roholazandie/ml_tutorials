@@ -33,8 +33,6 @@ def simple_file_reading():
 
 
 def read_csv_file_tensorflow(filenames):
-
-
     def create_file_reader_ops(filename_queue):
         reader = tf.TextLineReader(skip_header_lines=1)
         _, csv_row = reader.read(filename_queue)
@@ -45,7 +43,6 @@ def read_csv_file_tensorflow(filenames):
 
     filename_queue = tf.train.string_input_producer(filenames, num_epochs=1, shuffle=False)
     features, country = create_file_reader_ops(filename_queue)
-
 
     with tf.Session() as sess:
         sess.run(tf.local_variables_initializer())
@@ -93,7 +90,6 @@ def batching(filenames):
             min_after_dequeue=min_after_dequeue)
         return example_batch, label_batch
 
-
     example_batch, label_batch = input_pipeline(filenames=filenames, batch_size=10, num_epochs=4)
     with tf.Session() as sess:
         sess.run(tf.local_variables_initializer())
@@ -114,6 +110,7 @@ def multi_batching(filenames):
     '''
     the same as above(i.e. batching) but with multiple batches and more parallelism
     '''
+
     def create_file_reader_ops(filename_queue):
         reader = tf.TextLineReader(skip_header_lines=1)
         _, csv_row = reader.read(filename_queue)
@@ -149,8 +146,7 @@ def multi_batching(filenames):
         coord.join(threads)
 
 
-
-def dataset_reading(filenames):
+def dataset_reading_one_shot_reading(filenames):
     dataset = Dataset.from_tensor_slices(filenames)
     print(dataset.output_types)
     print(dataset.output_shapes)
@@ -172,9 +168,78 @@ def dataset_reading(filenames):
             except tf.errors.OutOfRangeError:
                 break
 
+
+def dataset_reading_initializable_iterator():
+    '''
+    An initializable iterator requires you to run an explicit iterator.
+    initializer operation before using it. In exchange for this inconvenience,
+    it enables you to parameterize the definition of the dataset,
+    using one or more tf.placeholder() tensors that can be fed when you initialize the iterator.
+    :param filenames:
+    :return:
+    '''
+    max_value = tf.placeholder(tf.int64, shape=[])
+    dataset = Dataset.range(max_value)
+    print(dataset.output_types)
+    print(dataset.output_shapes)
+
+    iterator = dataset.make_initializable_iterator()
+    next_element = iterator.get_next()
+
+    with tf.Session() as sess:
+        sess.run(iterator.initializer, feed_dict={max_value: 100})
+        while True:
+            try:
+                value = sess.run(next_element)
+                print(value)
+            except tf.errors.OutOfRangeError:
+                break
+
+
+def consuming_values_from_iterator():
+    dataset = Dataset.range(10)
+    iterator = dataset.make_initializable_iterator()
+    next_element = iterator.get_next()
+
+    # Typically `result` will be the output of a model, or an optimizer's
+    # training operation.
+    result = tf.add(next_element, next_element)
+
+    with tf.Session() as sess:
+        sess.run(iterator.initializer)
+        for i in range(10):
+            print(sess.run(result))
+
+
+def dataset_reading_map_transformation(filenames):
+    dataset = Dataset.from_tensor_slices(filenames)
+    dataset = dataset.flat_map(
+        lambda filename: (
+            tf.contrib.data.TextLineDataset(filename).skip(1).map(lambda line: tf.substr(line, 0, 1))))
+
+
+    #dataset = dataset.map(lambda x: tf.string_split([tf.cast(x, tf.string)], ','))
+    #record_defaults = [[""], [""], [0], [0], [0], [0]]
+    #dataset = dataset.map(lambda x: tf.decode_csv(x, record_defaults=record_defaults))
+    #tf.string_split([x],',')
+    iterator = dataset.make_one_shot_iterator()
+    next_element = iterator.get_next()
+
+    with tf.Session() as sess:
+        while True:
+            try:
+                value = sess.run(next_element)
+                print(value)
+            except tf.errors.OutOfRangeError:
+                break
+
+
 if __name__ == "__main__":
-    #simple_file_reading()
-    #read_csv_file_tensorflow(filenames=["olympics2016.csv"])
-    #batching(filenames=["olympics2016.csv"])
-    #multi_batching(filenames=["olympics2016.csv"])
-    dataset_reading(filenames=["olympics2016.csv"])
+    # simple_file_reading()
+    # read_csv_file_tensorflow(filenames=["olympics2016.csv"])
+    # batching(filenames=["olympics2016.csv"])
+    # multi_batching(filenames=["olympics2016.csv"])
+    # dataset_reading_one_shot_reading(filenames=["olympics2016.csv"])
+    # dataset_reading_initializable_iterator(filenames=["olympics2016.csv"])
+    # consuming_values_from_iterator()
+    dataset_reading_map_transformation(filenames=["olympics2016.csv"])

@@ -359,7 +359,7 @@ def tensor_in_tensorflow():
 
 def available_devices(device_name='CPU'):
     local_device_protos = device_lib.list_local_devices()
-    return [x.name for x in local_device_protos if x.device_type == device_name]
+    return [x.name for x in local_device_protos ]
 
 
 if __name__ == "__main__":
