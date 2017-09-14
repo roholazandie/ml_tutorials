@@ -250,7 +250,10 @@ def tensor_transformation():
     def flatten_tensor():
         a = tf.random_uniform((3, 4))
         m = tf.reshape(a, shape=(12,))
+        ######OR######
+        n = tf.reshape(a, (-1,))
         print(m)
+        print(n)
 
     def split_tensor():
         split0, split1, split2 = tf.split(tf.ones(shape=(5, 30)), [4, 15, 11], 1)
@@ -293,7 +296,7 @@ def tensor_transformation():
         #First example
         l = tf.Variable([[1,2,3,4],[5,6,7,8]])
         c = tf.strided_slice(l, [0, 0], [1, 2]) #[1,2]
-        b = tf.strided_slice(l, [0, 0], [2, 3]) #[[1 2 3], [5 6 7]]
+        b = tf.strided_slice(l, [0, 1], [2, 3]) #[[2 3], [6 7]]
 
         j = tf.Variable([[[12, 1, 1], [2, 2, 2]],
                          [[3, 3, 3], [4, 4, 4]],
@@ -316,16 +319,49 @@ def tensor_transformation():
             session.run(tf.global_variables_initializer())
             print(session.run(parts))
 
+
+    def one_hot_encoder():
+        data = [[1,2,3], [2,1,3]]
+        output = tf.one_hot(data, 5)
+        output = tf.unstack(output)
+        with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
+            print(sess.run(output))
+
+
+    def unstak_tensor():
+        x = [[1,2,3], [4,5,6]]
+        output = tf.unstack(x)
+        with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
+            print(sess.run(output))
+
+
+    def multiplication_tensors():
+        x = tf.ones([2, 3, 5])
+        x1 = tf.reshape(x, [-1, 5]) # we don't care about the 2 and 3 dimensions(first and second) so those dimenstion will be flattened
+        y = tf.ones((5, 4))
+        c = tf.matmul(x1, y)
+        c = tf.reshape(c, [2, 3, 4])
+        with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
+            print(sess.run(c))
+            print(sess.run(x1))
+
     # to_double_tensor()
     # cast_tensor()
     # reshape_tensor()
-    # flatten_tensor()
-    # split_tensor()
+    #flatten_tensor()
+    #split_tensor()
     # # tile_tensor()
     # concat_tensor()
-    # stack_tensors()
-    strided_slice_tensor()
+    #stack_tensors()
+    #strided_slice_tensor()
     #dynamic_partition_tensor()
+    # one_hot_encoder()
+    #unstak_tensor()
+    multiplication_tensors()
+
 
 
 def tensor_in_tensorflow():
@@ -371,5 +407,5 @@ if __name__ == "__main__":
     # variable_and_tensor_difference()
     # difference_between_placeholder_and_variables()
     # graph_in_tensorflow()
-    variables_are_stateful()
-    #tensor_transformation()
+    # variables_are_stateful()
+    tensor_transformation()

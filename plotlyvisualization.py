@@ -13,6 +13,7 @@ def countor(X, Y, Z):
     figure1 = dict(data=data)
     offpy(figure1, filename="sample.html", auto_open=True)
 
+
 def animate_optimization(X, Y, Z, xs , ys, gradxs, gradys):
     init_notebook_mode(connected=True)
     x = xs
@@ -79,6 +80,29 @@ def animate_optimization(X, Y, Z, xs , ys, gradxs, gradys):
     #figure1['frames'].append(frames2)
     #figure1 = dict(data=data, layout=layout, frames=frames)
     offpy(figure1, filename="sample.html", auto_open=True)
+
+
+def histogram_plot(X):
+    data = [go.Histogram(x=X)]
+    figure1 = dict(data=data)
+    offpy(figure1, filename="histogram.html", auto_open=True)
+
+
+
+def plot(X):
+    trace = go.Scatter(
+        x=np.linspace(0, len(X)),
+        y=X,
+        name='Low 2007',
+        line=dict(
+            color=('rgb(22, 96, 167)'),
+            width=4)
+    )
+    data = [trace]
+    figure = dict(data=data)
+    offpy(figure, filename="line_chart.html", auto_open=True)
+
+
 
 if __name__ == "__main__":
     from plotly.offline import init_notebook_mode, iplot

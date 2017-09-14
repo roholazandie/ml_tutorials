@@ -33,13 +33,13 @@ def sharing_variables():
     def reusing_variable():
         with tf.variable_scope("scope") as scope:
             result1 = my_variables()
-            scope.reuse_variables()  # allow scope1 to use the same variable again
+            rscope.reuse_variables()  # allow scope1 to use the same variable again
             result2 = my_variables()
             assert result1 is result2
             print(result1.name) # scope1/v1/weight:0
             print(result2.name) # scope1/v1/weight:0
 
-    two_scopes_with_same_call_to_variable_creator_fun()
+    #two_scopes_with_same_call_to_variable_creator_fun()
     reusing_variable()
 
 
