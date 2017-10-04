@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" line="118" />
+    <bookmark url="file://$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" line="170" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="788c70fc-3751-4db2-805e-7711b89ce98d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/histogram.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/line_chart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/custom_cell.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/hello.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/line_chart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/reader.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/recurrent_neural_networks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/tinyshakespeare.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tensorflow_tutorials/simpleoptimizationusingtensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/simple_optimization_using_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sample.iml" afterPath="$PROJECT_DIR$/.idea/sample.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic_models/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic_models/knn_tf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic_models/linear_regression_tf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic_models/svm_tf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/optimization/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/optimization/lipsciptz.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/data/hello.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/medium.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/mnist_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/mnist_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_III.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MNIST_data/t10k-images-idx3-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MNIST_data/t10k-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MNIST_data/train-images-idx3-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MNIST_data/train-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/recurrent_neural_network/hello.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/recurrent_neural_network/tinyshakespeare.txt" afterPath="$PROJECT_DIR$/recurrent_neural_network/data/tinyshakespeare.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotlyvisualization.py" afterPath="$PROJECT_DIR$/plotlyvisualization.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tst1.py" afterPath="$PROJECT_DIR$/tst1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/reader.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/reader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,44 +39,56 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/rnntutorial$enqueue_tensorflow.coverage" NAME="enqueue_tensorflow Coverage Results" MODIFIED="1503957546207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
-    <SUITE FILE_PATH="coverage/rnntutorial$broadcasting.coverage" NAME="broadcasting Coverage Results" MODIFIED="1504197992160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$rnn_tutorial.coverage" NAME="rnn_tutorial Coverage Results" MODIFIED="1507141201523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
+    <SUITE FILE_PATH="coverage/rnntutorial$enqueue_tensorflow.coverage" NAME="enqueue_tensorflow Coverage Results" MODIFIED="1505676231229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
     <SUITE FILE_PATH="coverage/rnntutorial$deepneuralnetworktensorflow.coverage" NAME="deepneuralnetworktensorflow Coverage Results" MODIFIED="1501689258765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$logisticautoregexample.coverage" NAME="logisticautoregexample Coverage Results" MODIFIED="1502139759610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$rnn_tensorflow.coverage" NAME="rnn_tensorflow Coverage Results" MODIFIED="1504719191623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
-    <SUITE FILE_PATH="coverage/rnntutorial$variables_in_tensorflow.coverage" NAME="variables_in_tensorflow Coverage Results" MODIFIED="1504893545466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
-    <SUITE FILE_PATH="coverage/rnntutorial$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1504204574536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$knn_tf.coverage" NAME="knn_tf Coverage Results" MODIFIED="1506134833486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_models" />
     <SUITE FILE_PATH="coverage/rnntutorial$server2.coverage" NAME="server2 Coverage Results" MODIFIED="1504210228634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
     <SUITE FILE_PATH="coverage/rnntutorial$custom_cell.coverage" NAME="custom_cell Coverage Results" MODIFIED="1505161224246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
-    <SUITE FILE_PATH="coverage/rnntutorial$symbolic_differentation.coverage" NAME="symbolic_differentation Coverage Results" MODIFIED="1503945775995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/theano_tensorflow" />
     <SUITE FILE_PATH="coverage/rnntutorial$different_datatypes_tensorflow.coverage" NAME="different_datatypes_tensorflow Coverage Results" MODIFIED="1504127248985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
-    <SUITE FILE_PATH="coverage/rnntutorial$rnn_tensorflow_II.coverage" NAME="rnn_tensorflow_II Coverage Results" MODIFIED="1505416483521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
     <SUITE FILE_PATH="coverage/rnntutorial$complexoptimizationusingtensorflow.coverage" NAME="complexoptimizationusingtensorflow Coverage Results" MODIFIED="1501620641450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$medium.coverage" NAME="medium Coverage Results" MODIFIED="1506373919750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
+    <SUITE FILE_PATH="coverage/rnntutorial$manuallinearmodel.coverage" NAME="manuallinearmodel Coverage Results" MODIFIED="1501601504139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$file_reading.coverage" NAME="file_reading Coverage Results" MODIFIED="1504154733940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$save_restore_variables.coverage" NAME="save_restore_variables Coverage Results" MODIFIED="1503958590343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$tst1.coverage" NAME="tst1 Coverage Results" MODIFIED="1505338692926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$Nosetests_in_test2_py.coverage" NAME="Nosetests in test2.py Coverage Results" MODIFIED="1504545311819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$neuralnetautograd.coverage" NAME="neuralnetautograd Coverage Results" MODIFIED="1501601840512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$rnn_tensorflow_III.coverage" NAME="rnn_tensorflow_III Coverage Results" MODIFIED="1505753466970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
+    <SUITE FILE_PATH="coverage/rnntutorial$random_ops_in_tensorflow.coverage" NAME="random_ops_in_tensorflow Coverage Results" MODIFIED="1502387080157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$using_gpu.coverage" NAME="using_gpu Coverage Results" MODIFIED="1504212430632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$rnn_mnist.coverage" NAME="rnn_mnist Coverage Results" MODIFIED="1506723236709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning" />
+    <SUITE FILE_PATH="coverage/rnntutorial$character_level_rnn.coverage" NAME="character_level_rnn Coverage Results" MODIFIED="1505946205968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
+    <SUITE FILE_PATH="coverage/rnntutorial$linear_regression_tf.coverage" NAME="linear_regression_tf Coverage Results" MODIFIED="1506115920829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_models" />
+    <SUITE FILE_PATH="coverage/rnntutorial$variable_scopes_tf.coverage" NAME="variable_scopes_tf Coverage Results" MODIFIED="1504303136561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$server1.coverage" NAME="server1 Coverage Results" MODIFIED="1504210205475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$broadcasting.coverage" NAME="broadcasting Coverage Results" MODIFIED="1504197992160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$variables_in_tensorflow.coverage" NAME="variables_in_tensorflow Coverage Results" MODIFIED="1504893545466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1504204574536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$svm_tf.coverage" NAME="svm_tf Coverage Results" MODIFIED="1506140858219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_models" />
+    <SUITE FILE_PATH="coverage/rnntutorial$symbolic_differentation.coverage" NAME="symbolic_differentation Coverage Results" MODIFIED="1503945775995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/theano_tensorflow" />
+    <SUITE FILE_PATH="coverage/rnntutorial$rnn_tensorflow_II.coverage" NAME="rnn_tensorflow_II Coverage Results" MODIFIED="1505768013850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
     <SUITE FILE_PATH="coverage/rnntutorial$recurrent_neural_networks.coverage" NAME="recurrent_neural_networks Coverage Results" MODIFIED="1504717886141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$symbols.coverage" NAME="symbols Coverage Results" MODIFIED="1503526764006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/theano_tensorflow" />
     <SUITE FILE_PATH="coverage/rnntutorial$control_dependency_tensorflow.coverage" NAME="control_dependency_tensorflow Coverage Results" MODIFIED="1503954708760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$mnist_rnn.coverage" NAME="mnist_rnn Coverage Results" MODIFIED="1506367193244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
     <SUITE FILE_PATH="coverage/rnntutorial$mnistexample.coverage" NAME="mnistexample Coverage Results" MODIFIED="1501177090356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$playingwithtensorflow.coverage" NAME="playingwithtensorflow Coverage Results" MODIFIED="1501274619177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$distribute_tensorflow.coverage" NAME="distribute_tensorflow Coverage Results" MODIFIED="1504210407590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
+    <SUITE FILE_PATH="coverage/rnntutorial$time_series_rnn.coverage" NAME="time_series_rnn Coverage Results" MODIFIED="1506982628186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning" />
     <SUITE FILE_PATH="coverage/rnntutorial$estimators_tensorflow.coverage" NAME="estimators_tensorflow Coverage Results" MODIFIED="1504297993830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
-    <SUITE FILE_PATH="coverage/rnntutorial$manuallinearmodel.coverage" NAME="manuallinearmodel Coverage Results" MODIFIED="1501601504139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$file_reading.coverage" NAME="file_reading Coverage Results" MODIFIED="1504154733940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
     <SUITE FILE_PATH="coverage/rnntutorial$neuralnetworkwithtensorflow.coverage" NAME="neuralnetworkwithtensorflow Coverage Results" MODIFIED="1501694152642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$word2vec_basic.coverage" NAME="word2vec_basic Coverage Results" MODIFIED="1502223542348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$optimizationusingtensorflow.coverage" NAME="optimizationusingtensorflow Coverage Results" MODIFIED="1501276039994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$save_restore_variables.coverage" NAME="save_restore_variables Coverage Results" MODIFIED="1503958590343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
-    <SUITE FILE_PATH="coverage/rnntutorial$tst1.coverage" NAME="tst1 Coverage Results" MODIFIED="1505338692926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$estimator_tensorflow.coverage" NAME="estimator_tensorflow Coverage Results" MODIFIED="1504289574542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
-    <SUITE FILE_PATH="coverage/rnntutorial$Nosetests_in_test2_py.coverage" NAME="Nosetests in test2.py Coverage Results" MODIFIED="1504545311819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$neuralnetautograd.coverage" NAME="neuralnetautograd Coverage Results" MODIFIED="1501601840512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$random_ops_in_tensorflow.coverage" NAME="random_ops_in_tensorflow Coverage Results" MODIFIED="1502387080157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$using_gpu.coverage" NAME="using_gpu Coverage Results" MODIFIED="1504212430632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
     <SUITE FILE_PATH="coverage/rnntutorial$plotlyvisualization.coverage" NAME="plotlyvisualization Coverage Results" MODIFIED="1501522697051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rnntutorial$word_level_rnn.coverage" NAME="word_level_rnn Coverage Results" MODIFIED="1507141522882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recurrent_neural_network" />
+    <SUITE FILE_PATH="coverage/rnntutorial$lipsciptz.coverage" NAME="lipsciptz Coverage Results" MODIFIED="1506104052147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/optimization" />
     <SUITE FILE_PATH="coverage/rnntutorial$fully_connected_feed.coverage" NAME="fully_connected_feed Coverage Results" MODIFIED="1501690463295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rnntutorial$tflayers_convolutional_neural_networks.coverage" NAME="tflayers_convolutional_neural_networks Coverage Results" MODIFIED="1502301149060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$variable_scopes_tf.coverage" NAME="variable_scopes_tf Coverage Results" MODIFIED="1504303136561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
     <SUITE FILE_PATH="coverage/rnntutorial$ssss.coverage" NAME="ssss Coverage Results" MODIFIED="1501534149100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rnntutorial$server1.coverage" NAME="server1 Coverage Results" MODIFIED="1504210205475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_tutorials" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -92,89 +111,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rnn_tensorflow_II.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py">
+      <file leaf-file-name="word_level_rnn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="358" column="49" lean-forward="true" selection-start-line="358" selection-start-column="49" selection-end-line="358" selection-end-column="49" />
+            <state relative-caret-position="1363">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#3815#6424#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rnn_cell_impl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/ops/rnn_cell_impl.py">
+      <file leaf-file-name="tutorial_rnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24288">
-              <caret line="576" column="19" lean-forward="false" selection-start-line="576" selection-start-column="19" selection-end-line="576" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plots.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plots.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tst1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tst1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+            <state relative-caret-position="-2142">
+              <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#108#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="save_restore_variables.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py">
+      <file leaf-file-name="mnist_rnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/mnist_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom_cell.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recurrent_neural_network/custom_cell.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2420">
-              <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+            <state relative-caret-position="438">
+              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variables_in_tensorflow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14784">
-              <caret line="339" column="8" lean-forward="false" selection-start-line="339" selection-start-column="8" selection-end-line="339" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recurrent_neural_network/reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3564">
-              <caret line="89" column="42" lean-forward="false" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-              <folding>
-                <element signature="e#735#773#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,13 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tran</find>
-      <find>trans</find>
-      <find>transf</find>
-      <find>transfo</find>
-      <find>transfor</find>
-      <find>logdir</find>
-      <find>logdi</find>
       <find>logd</find>
       <find>log</find>
       <find>lo</find>
@@ -222,6 +183,13 @@
       <find>dyn</find>
       <find>32</find>
       <find>initialize_</find>
+      <find>bell</find>
+      <find>hot</find>
+      <find>initia</find>
+      <find>ini</find>
+      <find>initi</find>
+      <find>static_</find>
+      <find>preds</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,18 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/playingwithtensorflow.py" />
-        <option value="$PROJECT_DIR$/optimizationusingtensorflow.py" />
-        <option value="$PROJECT_DIR$/mnistexample.py" />
-        <option value="$PROJECT_DIR$/ssss.py" />
-        <option value="$PROJECT_DIR$/fully_connected_feed.py" />
-        <option value="$PROJECT_DIR$/complexoptimizationusingtensorflow.py" />
-        <option value="$PROJECT_DIR$/deepneuralnetworktensorflow.py" />
-        <option value="$PROJECT_DIR$/neuralnetworkwithtensorflow.py" />
-        <option value="$PROJECT_DIR$/manuallinearmodel.py" />
-        <option value="$PROJECT_DIR$/tflayers_convolutional_neural_networks.py" />
-        <option value="$PROJECT_DIR$/random_ops_in_tensorflow.py" />
-        <option value="$PROJECT_DIR$/deep_neural_network_tensorflow.py" />
         <option value="$PROJECT_DIR$/variables_in_tensorflow.py" />
         <option value="$PROJECT_DIR$/save_restore_variables.py" />
         <option value="$PROJECT_DIR$/variable_scopes_tf.py" />
@@ -251,7 +207,6 @@
         <option value="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.ipynb" />
         <option value="$PROJECT_DIR$/theano_tensorflow/symbolic_differentation.py" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/control_dependency_tensorflow.py" />
-        <option value="$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/olympics2016.csv" />
@@ -274,7 +229,26 @@
         <option value="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
         <option value="$PROJECT_DIR$/recurrent_neural_network/custom_cell.py" />
         <option value="$PROJECT_DIR$/tst1.py" />
+        <option value="$PROJECT_DIR$/test1.ipynb" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/producers.py" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/hello1.txt" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/reader.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_III.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/howareyou.txt" />
         <option value="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py" />
+        <option value="$PROJECT_DIR$/basic_models/linear_regression_tf.py" />
+        <option value="$PROJECT_DIR$/optimization/lipsciptz.py" />
+        <option value="$PROJECT_DIR$/basic_models/knn_tf.py" />
+        <option value="$PROJECT_DIR$/basic_models/svm_tf.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/mnist_rnn.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/medium.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/rnn_tutorial.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/rnn_mnist.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py" />
+        <option value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py" />
       </list>
     </option>
   </component>
@@ -360,6 +334,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnntutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnntutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recurrent_neural_network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oreilly_hands_on_machine_learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnntutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnntutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic_models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -368,14 +374,16 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="transforma&#9;null&#9;null&#10;com&#9;FILE&#9;file:///home/rohola/Codes/Python/rnntutorial/complexoptimizationusingtensorflow.py&#10;full&#9;RUN_CONFIGURATION&#9;fully_connected_feed&#10;mn&#9;FILE&#9;file:///home/rohola/Codes/Python/rnntutorial/mnist_loader.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python/simple-examples" />
+    <property name="SearchEverywhereHistoryKey" value="word&#9;FILE&#9;file:///home/rohola/Codes/rnntutorial/recurrent_neural_network/word_level_rnn.py&#10;transforma&#9;null&#9;null&#10;com&#9;FILE&#9;file:///home/rohola/Codes/Python/rnntutorial/complexoptimizationusingtensorflow.py&#10;full&#9;RUN_CONFIGURATION&#9;fully_connected_feed&#10;mn&#9;FILE&#9;file:///home/rohola/Codes/Python/rnntutorial/mnist_loader.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/recurrent_neural_network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning" />
+      <recent name="$PROJECT_DIR$/recurrent_neural_network/data" />
       <recent name="$PROJECT_DIR$/recurrent_neural_network" />
       <recent name="$PROJECT_DIR$/tensorflow_tutorials" />
     </key>
@@ -392,27 +400,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rnn_tensorflow_II">
-    <configuration default="false" name="variables_in_tensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_tutorials" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="sample" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="rnn_tensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.rnn_tutorial">
+    <configuration default="false" name="word_level_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -425,13 +414,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="rnn_tensorflow_II" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="medium" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -444,13 +433,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/medium.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="custom_cell" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="rnn_tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -463,26 +452,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/custom_cell.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="tst1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="rnn_mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tst1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/mnist_rnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="time_series_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sample" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -638,19 +646,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.variables_in_tensorflow" />
-      <item index="1" class="java.lang.String" itemvalue="Python.rnn_tensorflow" />
-      <item index="2" class="java.lang.String" itemvalue="Python.rnn_tensorflow_II" />
-      <item index="3" class="java.lang.String" itemvalue="Python.custom_cell" />
-      <item index="4" class="java.lang.String" itemvalue="Python.tst1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.word_level_rnn" />
+      <item index="1" class="java.lang.String" itemvalue="Python.medium" />
+      <item index="2" class="java.lang.String" itemvalue="Python.rnn_tutorial" />
+      <item index="3" class="java.lang.String" itemvalue="Python.rnn_mnist" />
+      <item index="4" class="java.lang.String" itemvalue="Python.time_series_rnn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.rnn_tensorflow_II" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tst1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.custom_cell" />
-        <item index="3" class="java.lang.String" itemvalue="Python.variables_in_tensorflow" />
-        <item index="4" class="java.lang.String" itemvalue="Python.rnn_tensorflow" />
+        <item index="0" class="java.lang.String" itemvalue="Python.word_level_rnn" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rnn_tutorial" />
+        <item index="2" class="java.lang.String" itemvalue="Python.time_series_rnn" />
+        <item index="3" class="java.lang.String" itemvalue="Python.rnn_mnist" />
+        <item index="4" class="java.lang.String" itemvalue="Python.medium" />
       </list>
     </recent_temporary>
   </component>
@@ -724,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504298295766</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding RNN">
+      <created>1505416645568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1505416645568</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -744,18 +759,18 @@
   <component name="ToolWindowManager">
     <frame x="154" y="19" width="3687" height="2142" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22738728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44873208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39636162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950995" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800442" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20722486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44174758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42888644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43770674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41220945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44413328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -780,7 +795,8 @@
     <MESSAGE value="adding symbolic differentation" />
     <MESSAGE value="adding file_reading" />
     <MESSAGE value="adding estimator tensorflow, distribute, broadcasting and using gpu" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding estimator tensorflow, distribute, broadcasting and using gpu" />
+    <MESSAGE value="adding RNN" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding RNN" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -806,167 +822,53 @@
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py</url>
-          <line>263</line>
-          <option name="timeStamp" value="91" />
+          <url>file://$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py</url>
+          <line>224</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py</url>
+          <line>199</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py</url>
+          <line>232</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/basic_models/svm_tf.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="189" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="92" />
+      <option name="time" value="190" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/olympics2016.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/broadcasting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2816">
-          <caret line="69" column="16" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/different_datatypes_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/server2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/server1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/distribute_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/using_gpu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/contrib/learn/python/learn/estimators/linear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1378">
-          <caret line="389" column="6" lean-forward="false" selection-start-line="389" selection-start-column="6" selection-end-line="389" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/estimator/canned/linear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="162" column="20" lean-forward="false" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/iris.data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="119" column="30" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/estimator_tensorflow.py" />
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/estimators_tensorflow_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simplederivative.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/regularization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotlyvisualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4180">
-          <caret line="98" column="19" lean-forward="false" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/recurrent_neural_networks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="1199" column="38" lean-forward="false" selection-start-line="1199" selection-start-column="38" selection-end-line="1199" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/framework/ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,13 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2329">
           <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1053,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14784">
           <caret line="339" column="8" lean-forward="false" selection-start-line="339" selection-start-column="8" selection-end-line="339" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,14 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="1926" column="4" lean-forward="false" selection-start-line="1926" selection-start-column="4" selection-end-line="1926" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/ops/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="731" column="0" lean-forward="false" selection-start-line="731" selection-start-column="0" selection-end-line="731" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1099,22 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="1115" column="54" lean-forward="true" selection-start-line="1115" selection-start-column="54" selection-end-line="1115" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,27 +1002,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recurrent_neural_network/custom_cell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2420">
           <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test1.ipynb" />
     <entry file="file://$PROJECT_DIR$/tst1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
+        <state relative-caret-position="72">
           <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -1160,30 +1020,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/reader.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/producers.py" />
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3564">
-          <caret line="89" column="42" lean-forward="false" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-          <folding>
-            <element signature="e#735#773#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2024">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/data/belling_the_cat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="849" lean-forward="false" selection-start-line="0" selection-start-column="845" selection-end-line="0" selection-end-column="849" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/ops/rnn_cell_impl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24288">
-          <caret line="576" column="19" lean-forward="false" selection-start-line="576" selection-start-column="19" selection-end-line="576" selection-end-column="19" />
+        <state relative-caret-position="13904">
+          <caret line="340" column="6" lean-forward="false" selection-start-line="340" selection-start-column="6" selection-end-line="340" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3124">
+          <caret line="148" column="26" lean-forward="false" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/ops/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1788">
+          <caret line="1075" column="4" lean-forward="false" selection-start-line="1075" selection-start-column="4" selection-end-line="1075" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/data/howareyou.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1535" lean-forward="false" selection-start-line="0" selection-start-column="1535" selection-end-line="0" selection-end-column="1535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/data/tinyshakespeare.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/data/hello.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2198632">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/data/hello1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_III.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/util/lazy_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optimization/lipsciptz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_models/knn_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="700" column="0" lean-forward="false" selection-start-line="700" selection-start-column="0" selection-end-line="700" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotlyvisualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_models/svm_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="81" column="10" lean-forward="true" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_models/linear_regression_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1436">
+          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="358" column="49" lean-forward="true" selection-start-line="358" selection-start-column="49" selection-end-line="358" selection-end-column="49" />
+        <state relative-caret-position="3960">
+          <caret line="99" column="45" lean-forward="false" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/mnist_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4224">
+          <caret line="96" column="32" lean-forward="false" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="308" column="25" lean-forward="true" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.4/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="124" column="43" lean-forward="true" selection-start-line="124" selection-start-column="43" selection-end-line="124" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/medium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1524">
+          <caret line="69" column="44" lean-forward="true" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2142">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="e#108#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/mnist_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#3815#6424#0" expanded="false" />
           </folding>
         </state>
       </provider>
