@@ -3,6 +3,8 @@ import numpy as np
 import reader
 import tensorflow as tf
 from tensorflow.contrib import rnn
+from tensorflow.contrib.layers import fully_connected
+import plotlyvisualization as plt
 
 log_dir = "/home/rohola/tmp/word_level_rnn"
 
@@ -54,8 +56,8 @@ def build_basic_rnn_graph_without_list(
     '''
     # reset_graph()
 
-    x = tf.placeholder(tf.int32, [batch_size, n_steps], name='input_placeholder')
-    y = tf.placeholder(tf.int32, [batch_size, n_steps], name='labels_placeholder')
+    x = tf.placeholder(tf.int32, [None, n_steps], name='input_placeholder')
+    y = tf.placeholder(tf.int32, [None, n_steps], name='labels_placeholder')
 
     x_one_hot = tf.one_hot(x, n_inputs)
 
@@ -67,10 +69,11 @@ def build_basic_rnn_graph_without_list(
     #cell = CustomCell(state_size, num_weights=5)
     #cell = LayerNormalizedLSTMCell(num_units=state_size)
 
-    init_state = cell.zero_state(batch_size, tf.float32)
+    #init_state = cell.zero_state(None, tf.float32)
 
-    output, final_state = tf.nn.dynamic_rnn(cell, rnn_inputs, initial_state=init_state)
-    output = tf.reshape(output, [-1, n_neurons])
+    outputs, final_state = tf.nn.dynamic_rnn(cell, rnn_inputs, dtype=tf.float32)#, initial_state=init_state)
+    '''
+    outputs = tf.reshape(outputs, [-1, n_neurons])
     ##########OR########
     # outputs = []
     # state = init_state
@@ -84,20 +87,24 @@ def build_basic_rnn_graph_without_list(
     # output = tf.reshape(tf.stack(axis=1, values=outputs), [-1, state_size])
     ###################
 
-    output = tf.nn.dropout(output, keep_prob=0.5)
+    outputs = tf.nn.dropout(outputs, keep_prob=0.5)
     ################
     with tf.variable_scope('softmax'):
         W = tf.get_variable('W', [n_neurons, n_inputs])
         b = tf.get_variable('b', [n_inputs], initializer=tf.constant_initializer(0.0))
-
-    logits = tf.matmul(output, W) + b
+    
+    
+    logits = tf.matmul(outputs, W) + b
     logits = tf.reshape(logits, [batch_size, n_steps, n_inputs])
+    '''
+    logits = fully_connected(outputs, num_outputs=n_inputs, activation_fn=None)
 
     predictions = tf.nn.softmax(logits)
 
-    y_as_list = y  # [tf.squeeze(i, squeeze_dims=[1]) for i in tf.split(1, num_steps, y)]
+    y_as_list = y
 
-    loss_weights = tf.ones([batch_size, n_steps])  # [tf.ones([batch_size]) for i in range(num_steps)]
+    #loss_weights = tf.ones([None, n_steps])
+    loss_weights = tf.ones(tf.shape(x))
     losses = tf.contrib.seq2seq.sequence_loss(logits, y_as_list, loss_weights)
     total_loss = tf.reduce_mean(losses)
     train_step = tf.train.AdamOptimizer(learning_rate).minimize(total_loss)
@@ -105,12 +112,14 @@ def build_basic_rnn_graph_without_list(
     return dict(
         x=x,
         y=y,
-        init_state=init_state,
+        #init_state=init_state,
         final_state=final_state,
         total_loss=total_loss,
         predictions=predictions,
         train_step=train_step,
-        saver=tf.train.Saver()
+        saver=tf.train.Saver(),
+        y_as_list = y_as_list,
+        logits = logits
     )
 
 def build_basic_rnn_graph_with_list(
@@ -200,6 +209,7 @@ def train_network(g, num_epochs, num_steps=200, batch_size=32, verbose=True, sav
         total_training_loss = 0
         steps = 0
         training_state = None
+        all_states = []
         for idx, epoch in enumerate(gen_epochs(num_epochs, num_steps, batch_size)):
             for X, Y in epoch:
                 try:
@@ -207,20 +217,27 @@ def train_network(g, num_epochs, num_steps=200, batch_size=32, verbose=True, sav
 
                     feed_dict = {g['x']: X, g['y']: Y}
 
-                    if training_state is not None:
-                       feed_dict[g['init_state']] = training_state
+                    #if training_state is not None:
+                    #   feed_dict[g['init_state']] = training_state
 
 
-                    training_loss, training_state, _ = sess.run([g['total_loss'],
-                                                                 g['final_state'],
-                                                                 g['train_step']],
-                                                                feed_dict)
+                    # training_loss, training_state, _ = sess.run([g['total_loss'],
+                    #                                              g['final_state'],
+                    #                                              g['train_step']],
+                    #                                             feed_dict)
 
-                    #training_loss, _ , y_as_list, logits= sess.run([g['total_loss'], g['train_step'], g['y_as_list'], g['logits']], feed_dict)
 
-                    #y_as_list = [item[0] for item in y_as_list]
-                    #logits = [np.argmax(item[0]) for item in logits]
+                    all_states.append(training_state)
+                    training_loss, _ , y_as_list, logits= sess.run([g['total_loss'],
+                                                                    g['train_step'],
+                                                                    g['y_as_list'],
+                                                                    g['logits']],
+                                                                   feed_dict)
+
+                    y_as_list = [item[0] for item in y_as_list]
+                    logits = [np.argmax(item[0]) for item in logits]
                     #print(logits, y_as_list)
+
                     total_training_loss += training_loss
                     if verbose:
                         print("Average training loss for iteration", idx, " :", total_training_loss / steps)
@@ -228,35 +245,37 @@ def train_network(g, num_epochs, num_steps=200, batch_size=32, verbose=True, sav
                 except:
                     print("exception occurred at "+str(idx))
                     continue
-            #if save:
-            #g['saver'].save(sess, save)
 
-        #if save:
-        #print("saved")
+
+        #plt.animate_state(all_states[-1])
+
         g['saver'].save(sess, save)
         #########################################
-        num_words = 300
-        input_words = ["how", "are", "you"] * 10
-        input_words = input_words[0:10]
-
-        current_words = [vocab_to_idx[c] for c in input_words]
-        words = current_words
-
-        for i in range(num_words):
-            current_words = np.reshape(current_words, (1, 10))
-            feed_dict = {g['x']: current_words}
-
-            predictions, state = sess.run([g['predictions'], g['final_state']], feed_dict)
-
-            # current_words = [np.random.choice(vocab_size, 1, p=np.squeeze(prediction))[0] for prediction in predictions]
-            #current_words = [np.argmax(np.squeeze(prediction)) for prediction in predictions]
-
-            current_words = np.argmax(predictions,axis=2)
-            #words += current_words
-            words+=list(current_words[0])
-
-        words = map(lambda x: idx_to_vocab[x], words)
-        print(" ".join(words))
+        # num_words = 300
+        # input_words = ["how", "are", "you"] * 10
+        # input_words = input_words[0:10]
+        # state = None
+        # current_words = [vocab_to_idx[c] for c in input_words]
+        # words = current_words
+        #
+        # for i in range(num_words):
+        #     current_words = np.reshape(current_words, (1, 10))
+        #     if state is None:
+        #         feed_dict = {g['x']: current_words}
+        #     else:
+        #         feed_dict = {g['x']: current_words, g['init_state']: state}
+        #
+        #     predictions, state = sess.run([g['predictions'], g['final_state']], feed_dict)
+        #
+        #     # current_words = [np.random.choice(vocab_size, 1, p=np.squeeze(prediction))[0] for prediction in predictions]
+        #     #current_words = [np.argmax(np.squeeze(prediction)) for prediction in predictions]
+        #
+        #     current_words = np.argmax(predictions, axis=2)
+        #     #words += current_words
+        #     words+=list(current_words[0].tolist())
+        #
+        # words = map(lambda x: idx_to_vocab[x], words)
+        # print(" ".join(words))
 
     return training_losses
 
@@ -267,26 +286,32 @@ def generate_words(g, checkpoint, num_words, input_words=[], pick_top_words=None
         g['saver'] = tf.train.import_meta_graph(checkpoint+'.meta')
         g['saver'].restore(sess, checkpoint)
 
+        num_words = 300
+        # input_words = ["how", "are", "you"] * 10
+        # input_words = input_words[0:10]
+        state = None
         current_words = [vocab_to_idx[c] for c in input_words]
         words = current_words
 
-
         for i in range(num_words):
-            current_words = np.reshape(current_words, (1, 10))
+            current_words = np.reshape(current_words, (1, 80))
             feed_dict = {g['x']: current_words}
+            # if state is None:
+            #     feed_dict = {g['x']: current_words}
+            # else:
+            #     feed_dict = {g['x']: current_words, g['init_state']: state}
 
             predictions, state = sess.run([g['predictions'], g['final_state']], feed_dict)
 
-            if pick_top_words is not None:
-                p = np.squeeze(predictions)
-                p[np.argsort(p)[:-pick_top_words]] = 0
-                p = p / np.sum(p)
-                current_words = np.random.choice(vocab_size, 1, p=p)[0]
-            else:
-                #current_words = [np.random.choice(vocab_size, 1, p=np.squeeze(prediction))[0] for prediction in preds]
-                current_words = [np.argmax(np.squeeze(prediction)) for prediction in predictions]
+            # current_words = [np.random.choice(vocab_size, 1, p=np.squeeze(prediction))[0] for prediction in predictions]
+            # current_words = [np.argmax(np.squeeze(prediction)) for prediction in predictions]
 
-            words+=current_words
+            current_words = np.argmax(predictions, axis=2)
+            # words += current_words
+            words += list(current_words[0].tolist())
+
+        words = map(lambda x: idx_to_vocab[x], words)
+        print(" ".join(words))
 
     words = map(lambda x: idx_to_vocab[x], words)
     #print(" ".join(words))
@@ -294,25 +319,29 @@ def generate_words(g, checkpoint, num_words, input_words=[], pick_top_words=None
 
 
 if __name__ == "__main__":
-    file_name = 'data/howareyou.txt'
-    #file_name = 'data/tinyshakespeare.txt'
+    #file_name = 'data/howareyou.txt'
+    file_name = 'data/tinyshakespeare.txt'
     training_data = read_data(file_name)
     vocab_to_idx, idx_to_vocab = build_dataset(training_data)
     data = [vocab_to_idx[c] for c in training_data]
     vocab_size = len(vocab_to_idx)
 
-    mode = 'train'
-    #mode = 'test'
-    num_steps = 10
-    batch_size = 1
+    #mode = 'train'
+    mode = 'test'
+    num_steps = 80
+    batch_size = 32
 
     #g = build_basic_rnn_graph_with_list(num_classes=vocab_size, num_steps=num_steps, batch_size=batch_size)
     g = build_basic_rnn_graph_without_list(n_inputs=vocab_size, n_steps=num_steps, batch_size=batch_size)
     if mode == "train":
-        train_network(g, num_epochs=100, save=log_dir, num_steps=num_steps, batch_size=batch_size)
+        train_network(g, num_epochs=500, save=log_dir, num_steps=num_steps, batch_size=batch_size, verbose=True)
     else:
-        input_words = ["how", "are", "you"] * 10
-        input_words = input_words[0:10]
+        # input_words = np.array(["how", "are", "you"] * 1000)
+        # input_words = input_words[:num_steps*batch_size]
+        # input_words = input_words.reshape((batch_size, num_steps))
+        input_words = ["how", "are", "you"]*100
+        input_words = input_words[0:num_steps]
+        #input_words = input_words[0:10]
         text = generate_words(g, log_dir, 200, input_words=input_words)
         print(text)
 

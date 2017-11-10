@@ -14,6 +14,16 @@ def countor(X, Y, Z):
     offpy(figure1, filename="sample.html", auto_open=True)
 
 
+def animate_state(all_states):
+    trace = go.Heatmap(z=all_states)
+    data = [trace]
+    figure = dict(data=data)
+    offpy(figure, filename="heatmap.html", auto_open=True)
+
+
+
+
+
 def animate_optimization(X, Y, Z, xs , ys, gradxs, gradys):
     init_notebook_mode(connected=True)
     x = xs
@@ -101,6 +111,29 @@ def plot(X):
     data = [trace]
     figure = dict(data=data)
     offpy(figure, filename="line_chart.html", auto_open=True)
+
+
+
+def plot_surface(X):
+    data = [
+        go.Surface(
+            z=X
+        )
+    ]
+    layout = go.Layout(
+        title='',
+        autosize=False,
+        width=1000,
+        height=1000,
+        margin=dict(
+            l=65,
+            r=50,
+            b=65,
+            t=90
+        )
+    )
+    fig = go.Figure(data=data, layout=layout)
+    offpy(fig, filename="3dsurface.html", auto_open=True)
 
 
 

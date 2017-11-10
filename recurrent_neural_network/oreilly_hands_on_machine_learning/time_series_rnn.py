@@ -133,6 +133,6 @@ def creative_rnn():
 
 
 if __name__ == "__main__":
-    #rnn_time_series_approach1()
+    rnn_time_series_approach1()
     #rnn_time_series_approach2()
-    creative_rnn()
+    #creative_rnn()
