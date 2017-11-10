@@ -5,96 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="788c70fc-3751-4db2-805e-7711b89ce98d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/linear_regression.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/logistic_regression.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/regularization.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JMLRdropout.pdf" afterPath="$PROJECT_DIR$/JMLRdropout.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MNIST-data/t10k-images-idx3-ubyte.gz" afterPath="$PROJECT_DIR$/MNIST-data/t10k-images-idx3-ubyte.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MNIST-data/t10k-labels-idx1-ubyte.gz" afterPath="$PROJECT_DIR$/MNIST-data/t10k-labels-idx1-ubyte.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MNIST-data/train-images-idx3-ubyte.gz" afterPath="$PROJECT_DIR$/MNIST-data/train-images-idx3-ubyte.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MNIST-data/train-labels-idx1-ubyte.gz" afterPath="$PROJECT_DIR$/MNIST-data/train-labels-idx1-ubyte.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/mnist.pkl.gz" afterPath="$PROJECT_DIR$/data/mnist.pkl.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/one_spectral_clustering.pdf" afterPath="$PROJECT_DIR$/one_spectral_clustering.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text8.zip" afterPath="$PROJECT_DIR$/text8.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsne.png" afterPath="$PROJECT_DIR$/tsne.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sample.iml" afterPath="$PROJECT_DIR$/.idea/sample.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_models/__init__.py" afterPath="$PROJECT_DIR$/basic_models/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_models/knn_tf.py" afterPath="$PROJECT_DIR$/basic_models/knn_tf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_models/linear_regression_tf.py" afterPath="$PROJECT_DIR$/basic_models/linear_regression_tf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_models/svm_tf.py" afterPath="$PROJECT_DIR$/basic_models/svm_tf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elevations-3d-surface.html" afterPath="$PROJECT_DIR$/elevations-3d-surface.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example_using_autograd.py" afterPath="$PROJECT_DIR$/example_using_autograd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/explicit_gradient_backpropagation.py" afterPath="$PROJECT_DIR$/explicit_gradient_backpropagation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hessian_using_numpy.py" afterPath="$PROJECT_DIR$/hessian_using_numpy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/histogram.html" afterPath="$PROJECT_DIR$/histogram.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instabilitytest.py" afterPath="$PROJECT_DIR$/instabilitytest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/line_chart.html" afterPath="$PROJECT_DIR$/line_chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logistic_autoreg_example.py" afterPath="$PROJECT_DIR$/logistic_autoreg_example.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manual_optimization_linear_model.py" afterPath="$PROJECT_DIR$/manual_optimization_linear_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mnist_loader.py" afterPath="$PROJECT_DIR$/mnist_loader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt_bruno_elevation.csv" afterPath="$PROJECT_DIR$/mt_bruno_elevation.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neuralnet_autograd.py" afterPath="$PROJECT_DIR$/neuralnet_autograd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numdiff_test.py" afterPath="$PROJECT_DIR$/numdiff_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/optimization/__init__.py" afterPath="$PROJECT_DIR$/optimization/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/optimization/lipsciptz.py" afterPath="$PROJECT_DIR$/optimization/lipsciptz.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playingwithtensorflow.py" afterPath="$PROJECT_DIR$/playingwithtensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotlyvisualization.py" afterPath="$PROJECT_DIR$/plotlyvisualization.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots.py" afterPath="$PROJECT_DIR$/plots.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/__init__.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/character_level_rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/custom_cell.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/custom_cell.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/data/hello.txt" afterPath="$PROJECT_DIR$/recurrent_neural_network/data/hello.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/data/tinyshakespeare.txt" afterPath="$PROJECT_DIR$/recurrent_neural_network/data/tinyshakespeare.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/line_chart.html" afterPath="$PROJECT_DIR$/recurrent_neural_network/line_chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/medium.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/medium.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/mnist_rnn.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/mnist_rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/mnist_rnn.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/mnist_rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/time_series_rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/oreilly_hands_on_machine_learning/tutorial_rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/reader.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/reader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/recurrent_neural_networks.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/recurrent_neural_networks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_II.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_III.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/rnn_tensorflow_III.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py" afterPath="$PROJECT_DIR$/recurrent_neural_network/word_level_rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regularization.py" afterPath="$PROJECT_DIR$/regularization.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simplederivative.py" afterPath="$PROJECT_DIR$/simplederivative.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/__init__.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/broadcasting.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/broadcasting.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/classifier.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/classifier.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/complex_optimization_using_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/complex_optimization_using_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/control_dependency_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/control_dependency_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/deep_neural_network_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/deep_neural_network_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/different_datatypes_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/different_datatypes_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/distribute_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/distribute_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/enqueue_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/estimators_tensorflow_pandas.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/estimators_tensorflow_pandas.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/file_reading.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/file_reading.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/fully_connected_feed.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/fully_connected_feed.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/iris.data.txt" afterPath="$PROJECT_DIR$/tensorflow_tutorials/iris.data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/neural_network_with_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/neural_network_with_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/olympics2016.csv" afterPath="$PROJECT_DIR$/tensorflow_tutorials/olympics2016.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/random_ops_in_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/random_ops_in_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/save_restore_variables.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/server1.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/server1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/server2.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/server2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/simple_optimization_using_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/simple_optimization_using_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/tflayers_convolutional_neural_networks.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/tflayers_convolutional_neural_networks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/using_gpu.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/using_gpu.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/variable_scopes_tf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" afterPath="$PROJECT_DIR$/tensorflow_tutorials/variables_in_tensorflow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test2.py" afterPath="$PROJECT_DIR$/test2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theano_tensorflow/__init__.py" afterPath="$PROJECT_DIR$/theano_tensorflow/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theano_tensorflow/symbolic_differentation.py" afterPath="$PROJECT_DIR$/theano_tensorflow/symbolic_differentation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theano_tensorflow/symbols.py" afterPath="$PROJECT_DIR$/theano_tensorflow/symbols.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tst1.py" afterPath="$PROJECT_DIR$/tst1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec_basic.py" afterPath="$PROJECT_DIR$/word2vec_basic.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -759,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507145128207</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding Gradient Descent, logistic regression and linear regression from the book hands-on machine learning with scikit-learn and tensorflow">
+      <created>1510337814535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510337814535</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -817,7 +735,8 @@
     <MESSAGE value="adding estimator tensorflow, distribute, broadcasting and using gpu" />
     <MESSAGE value="adding RNN" />
     <MESSAGE value="adding RNN from oreilly book" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding RNN from oreilly book" />
+    <MESSAGE value="adding Gradient Descent, logistic regression and linear regression from the book hands-on machine learning with scikit-learn and tensorflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Gradient Descent, logistic regression and linear regression from the book hands-on machine learning with scikit-learn and tensorflow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
