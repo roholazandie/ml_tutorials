@@ -133,6 +133,10 @@ def creative_rnn():
 
 
 if __name__ == "__main__":
-    rnn_time_series_approach1()
+    #rnn_time_series_approach1()
     #rnn_time_series_approach2()
-    #creative_rnn()
+    creative_rnn()
+    t = np.linspace(0, 30, 10000)
+    y = t * np.sin(t) / 3 + 2 * np.sin(5 * t)
+    plt.plot(t, y)
+    plt.show()

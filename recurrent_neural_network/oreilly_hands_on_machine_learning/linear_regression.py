@@ -102,6 +102,7 @@ def stochastic_gradient_descent_using_sklearn(X, y):
     sgd_regressor.fit(X, y.ravel())
     return sgd_regressor.intercept_, sgd_regressor.coef_
 
+
 if __name__ == "__main__":
     X, y = generate_dataset()
     plt.scatter(X, y)

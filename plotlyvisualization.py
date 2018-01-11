@@ -1,6 +1,7 @@
 from plotly.offline import init_notebook_mode, iplot
 import plotly.graph_objs as go
 from plotly.offline import plot as offpy
+from plotly import tools
 import numpy as np
 
 def countor(X, Y, Z):
@@ -98,6 +99,20 @@ def histogram_plot(X):
     offpy(figure1, filename="histogram.html", auto_open=True)
 
 
+def multi_histogram(plot_data):
+    traces = []
+    for d in plot_data:
+        traces.append(go.Histogram(x=d))
+
+    figure = tools.make_subplots(2, 2)
+    #for trace in traces:
+    figure.append_trace(traces[0],1,1)
+    figure.append_trace(traces[1],1,2)
+    figure.append_trace(traces[2],2,1)
+    figure.append_trace(traces[3],2,2)
+
+    offpy(figure, filename="multi_histogram.html", auto_open=True)
+
 
 def plot(X):
     trace = go.Scatter(
@@ -112,6 +127,53 @@ def plot(X):
     figure = dict(data=data)
     offpy(figure, filename="line_chart.html", auto_open=True)
 
+
+def scatter(x, y, color):
+    if not list(color):
+        color = np.random.randn(np.size(x))
+
+    trace1 = go.Scatter(
+        x=x,
+        y=y,
+        mode='markers',
+        marker=dict(
+            size='5',
+            color=color,  # set color equal to a variable
+            colorscale='Viridis',
+            showscale=True
+        )
+    )
+    data = [trace1]
+    figure = dict(data=data)
+    offpy(figure, filename="scatter.html", auto_open=True)
+
+
+
+def scatter3(x, y, z, color):
+    trace1 = go.Scatter3d(
+        x=x,
+        y=y,
+        z=z,
+        mode='markers',
+        marker=dict(
+            size=5,
+            color=color,  # set color to an array/list of desired values
+            colorscale='Viridis',  # choose a colorscale
+            opacity=0.8
+        )
+    )
+
+    data = [trace1]
+    layout = go.Layout(
+        margin=dict(
+            l=0,
+            r=0,
+            b=0,
+            t=0
+        )
+    )
+    figure = go.Figure(data=data, layout=layout)
+    offpy(figure, filename="scatter.html", auto_open=True)
 
 
 def plot_surface(X):
