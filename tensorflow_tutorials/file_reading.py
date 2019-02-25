@@ -1,7 +1,6 @@
 import tensorflow as tf
 import os
 
-from tensorflow.contrib.data.python.ops.dataset_ops import Dataset
 from tensorflow.python.ops.tensor_array_ops import TensorArray
 
 
@@ -147,7 +146,7 @@ def multi_batching(filenames):
 
 
 def dataset_reading_one_shot_reading(filenames):
-    dataset = Dataset.from_tensor_slices(filenames)
+    dataset = tf.data.Dataset.from_tensor_slices(filenames)
     print(dataset.output_types)
     print(dataset.output_shapes)
 
@@ -179,7 +178,7 @@ def dataset_reading_initializable_iterator():
     :return:
     '''
     max_value = tf.placeholder(tf.int64, shape=[])
-    dataset = Dataset.range(max_value)
+    dataset = tf.data.Dataset.range(max_value)
     print(dataset.output_types)
     print(dataset.output_shapes)
 
@@ -197,7 +196,7 @@ def dataset_reading_initializable_iterator():
 
 
 def consuming_values_from_iterator():
-    dataset = Dataset.range(10)
+    dataset = tf.data.Dataset.range(10)
     iterator = dataset.make_initializable_iterator()
     next_element = iterator.get_next()
 
@@ -212,7 +211,7 @@ def consuming_values_from_iterator():
 
 
 def dataset_reading_map_transformation(filenames):
-    dataset = Dataset.from_tensor_slices(filenames)
+    dataset = tf.data.Dataset.from_tensor_slices(filenames)
     dataset = dataset.flat_map(
         lambda filename: (
             tf.contrib.data.TextLineDataset(filename).skip(1).map(lambda line: tf.substr(line, 0, 1))))

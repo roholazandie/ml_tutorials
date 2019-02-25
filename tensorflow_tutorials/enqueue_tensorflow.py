@@ -2,7 +2,8 @@ import tensorflow as tf
 import recurrent_neural_network.reader as reader
 import numpy as np
 '''
-
+These methods are deprecated and will be removed in future versions
+now use tf.data.Dataset for input pipelines
 '''
 
 

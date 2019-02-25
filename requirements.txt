@@ -1,0 +1,5 @@
+# python==3.6.1
+numpy
+tensorflow
+pandas
+matplotlib

@@ -1,4 +1,3 @@
-from tensorflow.contrib.data.python.ops.dataset_ops import Dataset
 import tensorflow as tf
 import os
 import csv
