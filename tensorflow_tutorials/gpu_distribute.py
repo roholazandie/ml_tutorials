@@ -4,6 +4,7 @@ import time
 
 BATCH_SIZE = 512
 EPOCHS = 5
+NUM_GPUS = 4
 
 
 class TimeHistory(tf.train.SessionRunHook):
@@ -13,6 +14,8 @@ class TimeHistory(tf.train.SessionRunHook):
         self.iter_time_start = time.time()
     def after_run(self, run_context, run_values):
         self.times.append(time.time() - self.iter_time_start)
+        loss_value = run_values.results
+        print("loss value:", loss_value)
 
 
 def input_fn(images, labels, epochs, batch_size):
@@ -101,3 +104,9 @@ if __name__ == "__main__":
                                         test_labels,
                                         epochs=1,
                                         batch_size=BATCH_SIZE))
+
+    total_time = sum(time_hist.times)
+    print("total time with"+ str(NUM_GPUS) + "GPU(s):"+str(total_time)+"seconds")
+
+    avg_time_per_batch = np.mean(time_hist.times)
+    print(str(BATCH_SIZE * NUM_GPUS / avg_time_per_batch)+" images/second with+"+str(NUM_GPUS)+"GPU(s)")
