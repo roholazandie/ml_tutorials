@@ -1,4 +1,3 @@
-from sklearn import cross_validation
 from sklearn import datasets
 import tensorflow as tf
 import numpy as np

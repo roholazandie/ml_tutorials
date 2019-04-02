@@ -263,12 +263,13 @@ def tensor_transformation():
             print(sess.run(split0))
             print(sess.run(split1))
 
-    # def tile_tensor():
-    #     c = tf.constant(3, shape=(2, 3))
-    #     t = tf.tile(c, [1,1,1])
-    #     with tf.Session() as sess:
-    #         sess.run(tf.global_variables_initializer())
-    #         print(sess.run(t))
+    def tile_tensor():
+        vec = tf.constant([1, 2, 3, 4])
+        t = tf.tile(tf.expand_dims(vec, 0), [4,1])
+        with tf.Session() as sess:
+            sess.run(tf.global_variables_initializer())
+            print(sess.run(tf.expand_dims(vec, 0)))
+            print(sess.run(t))
 
     def concat_tensor():
         t1 = [[1, 2, 3], [4, 5, 6]]
@@ -353,14 +354,14 @@ def tensor_transformation():
     # reshape_tensor()
     #flatten_tensor()
     #split_tensor()
-    # # tile_tensor()
+    tile_tensor()
     # concat_tensor()
     #stack_tensors()
     #strided_slice_tensor()
     #dynamic_partition_tensor()
     # one_hot_encoder()
-    #unstak_tensor()
-    multiplication_tensors()
+    unstak_tensor()
+    #multiplication_tensors()
 
 
 
@@ -409,3 +410,4 @@ if __name__ == "__main__":
     # graph_in_tensorflow()
     # variables_are_stateful()
     tensor_transformation()
+

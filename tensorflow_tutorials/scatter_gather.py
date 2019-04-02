@@ -27,20 +27,37 @@ def gathering(updates, indices):
     return gathered_value
 
 
-if __name__ == "__main__":
-    '''
-    Whereas in tf.gather indices defines slices into the first dimension of params, 
-    in tf.gather_nd, indices defines slices into the first N dimensions of params, where N = indices.shape[-1].
+def gather1():
+    positions = tf.constant([2,4], tf.int32)
+    seq_length = 6
+    batch_size = 5
+    flat_offsets = tf.reshape(tf.range(0, batch_size, dtype=tf.int32) * seq_length, [-1, 1])
+    flat_positions = tf.reshape( positions + flat_offsets, [-1])
+    print("====")
+    with tf.Session() as sess:
+        print(sess.run(flat_offsets))
+        print(sess.run(flat_positions))
 
-    '''
+
+
+if __name__ == "__main__":
+
     pad_mask = tf.constant([0, 1, 0, 1, 1, 0, 0, 1], dtype=tf.float32)
-    nonpad_mask = 1 - pad_mask
-    padded_ids = tf.to_int32(tf.where(pad_mask < 1e-9))
-    non_padded_ids = tf.to_int32(tf.where(nonpad_mask < 1e-9))
+    nonpad_mask = 1 - pad_mask # [1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0]
+    padded_ids = tf.to_int32(tf.where(pad_mask < 1e-9)) #[0, 2, 5, 6]
+    non_padded_ids = tf.to_int32(tf.where(nonpad_mask < 1e-9)) #[1, 3, 4, 7]
     with tf.Session() as sess:
         print(sess.run(padded_ids))
+        print(sess.run(non_padded_ids))
 
     data = tf.constant([0, 11, 0, 10, 9, 0, 0, 12])
     gathered = gathering(data, non_padded_ids)
 
     scattering(gathered, non_padded_ids, tf.constant([8]))
+
+
+    data = tf.constant([['a', 'b'], ['c', 'd']], dtype=tf.string)
+    indices = [[0, 0], [1, 1]]
+    gathering(data, indices)
+
+    gather1()

@@ -1,0 +1,20 @@
+word2 word4 word2 word2 word6
+word4 word8
+word10 word10 word12
+word14 word2 word4
+word2 word4 word2 word2 word6
+word4 word8
+word10 word10 word12
+word14 word2 word4
+word2 word4 word2 word2 word6
+word4 word8
+word10 word10 word12
+word14 word2 word4
+word2 word4 word2 word2 word6
+word4 word8
+word10 word10 word12
+word14 word2 word4
+word2 word4 word2 word2 word6
+word4 word8
+word10 word10 word12
+word14 word2 word4 word14 word2 word4 word14 word2 word4

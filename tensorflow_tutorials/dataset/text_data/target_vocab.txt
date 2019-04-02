@@ -1,0 +1,8 @@
+<unk>
+<s>
+</s>
+word1
+word3
+word5
+word7
+word9

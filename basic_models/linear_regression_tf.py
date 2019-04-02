@@ -33,7 +33,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for epoch in range(num_epochs):
-        for x,y in zip(train_X, train_Y):
+        for x, y in zip(train_X, train_Y):
 
             iteration_loss, _, W_value, b_value = sess.run([total_loss, train_step, W, b], feed_dict={X: x, Y:y})
             #print(iteration_loss)

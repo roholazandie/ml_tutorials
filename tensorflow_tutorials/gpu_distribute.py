@@ -10,8 +10,10 @@ NUM_GPUS = 4
 class TimeHistory(tf.train.SessionRunHook):
     def begin(self):
         self.times = []
+
     def before_run(self, run_context):
         self.iter_time_start = time.time()
+
     def after_run(self, run_context, run_values):
         self.times.append(time.time() - self.iter_time_start)
         loss_value = run_values.results
@@ -27,32 +29,6 @@ def input_fn(images, labels, epochs, batch_size):
     ds = ds.prefetch(2)
     # Return the dataset. (L)
     return ds
-
-def model_fn1():
-    inputs = tf.keras.Input(shape=(28, 28, 1))  # Returns a placeholder
-    x = tf.keras.layers.Conv2D(filters=32,
-                               kernel_size=(3, 3),
-                               activation=tf.nn.relu)(inputs)
-    x = tf.keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2)(x)
-    x = tf.keras.layers.Conv2D(filters=64,
-                               kernel_size=(3, 3),
-                               activation=tf.nn.relu)(x)
-    x = tf.keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2)(x)
-    x = tf.keras.layers.Conv2D(filters=64,
-                               kernel_size=(3, 3),
-                               activation=tf.nn.relu)(x)
-    x = tf.keras.layers.Flatten()(x)
-    x = tf.keras.layers.Dense(64, activation=tf.nn.relu)(x)
-    predictions = tf.keras.layers.Dense(LABEL_DIMENSIONS,
-                                        activation=tf.nn.softmax)(x)
-
-    model = tf.keras.Model(inputs=inputs, outputs=predictions)
-    optimizer = tf.train.AdamOptimizer(learning_rate=0.001)
-    model.compile(loss='categorical_crossentropy',
-                  optimizer=optimizer,
-                  metrics=['accuracy'])
-
-    return model
 
 
 def architecture(inputs, mode, scope='MnistConvNet'):
