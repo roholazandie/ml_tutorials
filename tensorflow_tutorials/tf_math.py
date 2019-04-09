@@ -38,8 +38,24 @@ def multinomial_sampling():
         result = sess.run(res)
         print(result)
 
+
+def sample():
+    import numpy as np
+    placeholder = tf.placeholder(shape=[5,3,2], dtype=tf.float32)
+    a = np.zeros([5,3,2], "float32")
+    x = tf.reduce_sum(placeholder)
+
+    with tf.Session() as sess:
+        result = sess.run(x, feed_dict={placeholder: a})
+        print(result)
+        if result == 0.0:
+            print("s")
+
+
+
 if __name__ == "__main__":
     #sample_top_k_vector()
     #sample_top_k_matrix()
     #tfwhere()
-    multinomial_sampling()
+    #multinomial_sampling()
+    sample()
