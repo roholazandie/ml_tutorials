@@ -34,22 +34,23 @@ class Model(nn.Module):
 
 if __name__ == "__main__":
     # Parameters and DataLoaders
-    input_size = 5
+    input_size = 500
     output_size = 2
 
     batch_size = 30
-    data_size = 100
+    data_size = 1000
 
     rand_loader = DataLoader(dataset=RandomDataset(input_size, data_size),
                              batch_size=batch_size, shuffle=True)
 
-    device0 = torch.cuda.get_device_name(0)
+    device0 = torch.device('cuda:2')
+    device1 = torch.device('cuda:0')
 
     model = Model(input_size, output_size)
     model.to(device0)
 
     # run the model
     for data in rand_loader:
-        input_ = data.to(device0)
+        input_ = data.to(device1)
         output = model(input_)
         print("input size", input_.size(), "output size", output.size())
