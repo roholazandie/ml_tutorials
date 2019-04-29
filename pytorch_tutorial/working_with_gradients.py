@@ -15,5 +15,5 @@ print(out.grad_fn)
 out.backward()
 
 #check gradient
-# d(out)/dx
+# d(out)/dx = (3/2)*(x+2)
 print(x.grad)

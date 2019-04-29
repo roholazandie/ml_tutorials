@@ -86,10 +86,65 @@ def conversion_with_numpy():
     print(x1)
 
 
+def batch_matrix_multiplication():
+    batch1 = torch.rand((10, 4, 5))
+    batch2 = torch.rand((10, 5, 3))
+
+    result = torch.bmm(batch1, batch2)
+    print(result)
+    print(result.size())
+
+
+def any():
+    x = torch.ones(10, 10, dtype=torch.uint8)
+    res = torch.stack([x, x]).any(dim=-1)
+    print(res)
+
+
+def repeat():
+    x = torch.rand((3,1))
+    v = x.repeat(3, 2)
+    e = x.expand(3, 2)
+    print(v)
+    print(e)
+
+
+def scatter():
+    #x = torch.rand(2, 5)
+    #print(x)
+    x = torch.tensor(1)
+    v = torch.zeros(3, 5).scatter_(0, torch.tensor([[0, 1, 2, 0, 0],
+                                                    [2, 0, 0, 1, 2]]), x)
+    print(v)
+
+
+def split():
+    a = torch.randn(50, 80)
+    res = a.split(40, 1) # split to two randn(50, 40)
+    print(res)
+
+    res = a.split(10, 0) # split to 5 rand(10, 80)
+    print(res)
+
+
+def unsqueeze():
+    padding_mask = torch.tensor([0,0,0,1,1,1,1,1,1], dtype=torch.float32)
+    res = padding_mask#.unsqueeze(1).unsqueeze(2)
+    mat = torch.ones(9, 9, dtype=torch.float32)
+    t = mat + res
+    print(res)
+
+
 if __name__ == "__main__":
     #create_matrices()
     #operators()
     #indexing()
     #resize_reshape()
     #get_the_values()
-    conversion_with_numpy()
+    #conversion_with_numpy()
+    #batch_matrix_multiplication()
+    #any()
+    #repeat()
+    #scatter()
+    #split()
+    unsqueeze()
