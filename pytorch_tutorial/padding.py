@@ -13,3 +13,17 @@ mask = torch.tensor([1, 1, 1, 1, 0, 0, 0, 0, 0], dtype=torch.uint8)
 value = -1
 x = x.masked_fill_(mask, value)
 print(x)
+
+
+class S:
+    def __init__(self, a):
+        self.a = a
+
+s = S(3)
+l = [s]*10
+
+
+l[3].a = 5
+
+print(l[4].a)
+
