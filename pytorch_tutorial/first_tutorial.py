@@ -136,12 +136,29 @@ def unsqueeze():
 
 def gather():
     #https://stackoverflow.com/a/54706716/2736889
-    index = torch.tensor([[0, 1, 2], [1, 2, 0]])
-    src = torch.tensor([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    index = torch.tensor([[0, 1, 2],
+                          [1, 2, 0]])
+    src = torch.tensor([[1, 2, 3],
+                        [4, 5, 6],
+                        [7, 8, 9]])
 
     result = src.gather(0, index)
 
     print(result)
+
+
+def masking():
+    src = torch.tensor([[1, 2, 3],
+                        [4, 5, 6],
+                        [7, 8, 9]])
+
+    mask = torch.tensor([[1, 0, 1],
+                        [0, 0, 1],
+                        [1, 0, 0]]).byte()
+
+    res = src.masked_select(mask)
+
+    print(res)
 
 if __name__ == "__main__":
     #create_matrices()
@@ -156,4 +173,5 @@ if __name__ == "__main__":
     #scatter()
     #split()
     #unsqueeze()
-    gather()
+    #gather()
+    masking()
