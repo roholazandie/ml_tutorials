@@ -1,6 +1,6 @@
 import torch
 import torch.nn.functional as F
-
+from torch import nn
 
 def try_cross_entropy_loss():
     num_classes = 5
@@ -12,6 +12,10 @@ def try_cross_entropy_loss():
 
     print(loss.item())
 
+    loss = nn.CrossEntropyLoss()
+    input = torch.randn(3, 5, requires_grad=True)
+    target = torch.empty(3, dtype=torch.long).random_(5)
+    output = loss(input, target)
 
 def nll_loss():
     num_classes = 5

@@ -143,7 +143,7 @@ class Conv1D(nn.Module):
 class Attention(nn.Module):
     '''
     In this attention we dont' care about the padding mask, here we just allocate one char for pad
-    and then treat it as other chatacters
+    and then treat it as other characters
     the only masking is future masking that is implemented by self.bias
     '''
     def __init__(self, nx, n_ctx, config, scale=False, output_attentions=False):
@@ -206,7 +206,81 @@ class Attention(nn.Module):
         return a
 
 
+
 class MultiheadAttention(nn.Module):
+    def __init__(self, nx, n_ctx, config, scale=False, output_attentions=False):
+        super(MultiheadAttention, self).__init__()
+        n_state = nx  # in Attention: n_state=768 (nx=n_embd)
+        # [switch nx => n_state from Block to Attention to keep identical to TF implem]
+        assert n_state % config.n_head == 0
+        self.register_buffer("bias", torch.tril(torch.ones(n_ctx, n_ctx)).view(1, 1, n_ctx, n_ctx))
+        self.n_head = config.n_head
+        self.split_size = n_state
+        self.scale = scale
+        self.output_attentions = output_attentions
+        self.c_attn = Conv1D(n_state * 3, 1, nx) #(out_channels, size_conv, in_channels)
+        self.c_proj = Conv1D(n_state, 1, nx)
+        self.attn_dropout = nn.Dropout(config.attn_pdrop)
+        self.resid_dropout = nn.Dropout(config.resid_pdrop)
+
+    def _attn(self, q, k, v):
+        w = torch.matmul(q, k)
+        if self.scale:
+            w = w / math.sqrt(v.size(-1))
+        # w = w * self.bias + -1e9 * (1 - self.bias)  # TF implem method: mask_attn_weights
+        # XD: self.b may be larger than w, so we need to crop it
+        b = self.bias[:, :, : w.size(-2), : w.size(-1)]
+        w = w * b + -1e9 * (1 - b)
+
+        w = nn.Softmax(dim=-1)(w)
+        w = self.attn_dropout(w)
+        if self.output_attentions:
+            return w, torch.matmul(w, v)
+        return torch.matmul(w, v)
+
+    def merge_heads(self, x):
+        x = x.permute(0, 2, 1, 3).contiguous()
+        new_x_shape = x.size()[:-2] + (x.size(-2) * x.size(-1),)
+        return x.view(*new_x_shape)  # in Tensorflow implem: fct merge_states
+
+    def split_heads(self, x, k=False):
+        new_x_shape = x.size()[:-1] + (self.n_head, x.size(-1) // self.n_head)
+        x = x.view(*new_x_shape)  # in Tensorflow implem: fct split_states
+        if k:
+            return x.permute(0, 2, 3, 1)
+        else:
+            return x.permute(0, 2, 1, 3)
+
+    def forward(self, query, key, value):
+        qkv_same = (query.data_ptr() == key.data_ptr() == value.data_ptr())  # self-attention
+        kv_same = (key.data_ptr() == value.data_ptr())
+
+        if qkv_same:
+            query = self.c_attn(query)
+            query, key, value = query.split(self.split_size, dim=2)
+
+        elif kv_same:
+            q_w, q_b = self.c_attn.weight[:, :self.split_size], self.c_attn.bias[:self.split_size]
+            query = F.linear(query, q_w.transpose(1, 0), q_b)
+            kv_w, kv_b = self.c_attn.weight[:, self.split_size:], self.c_attn.bias[self.split_size:]
+            key, value = F.linear(key, kv_w.transpose(1, 0), kv_b).split(self.split_size, dim=-1)
+
+        query = self.split_heads(query)
+        key = self.split_heads(key, k=True)
+        value = self.split_heads(value)
+        a = self._attn(query, key, value)
+        if self.output_attentions:
+            attentions, a = a
+        a = self.merge_heads(a)
+        a = self.c_proj(a)
+        a = self.resid_dropout(a)
+        if self.output_attentions:
+            return attentions, a
+        return a
+
+
+
+class MultiheadAttention1(nn.Module):
     @classmethod
     def _get_future_mask(cls, size, device):
         if not hasattr(cls, '_future_mask') or cls._future_mask.device != device or cls._future_mask.shape < size:
@@ -217,7 +291,7 @@ class MultiheadAttention(nn.Module):
         return mask
 
     def __init__(self, n_features, n_heads, dropout):
-        super(MultiheadAttention, self).__init__()
+        super(MultiheadAttention1, self).__init__()
         assert n_features % n_heads == 0
 
         self.n_features = n_features
@@ -301,6 +375,16 @@ if __name__ == "__main__":
     config = OpenAIGPTConfig()
 
     input_value = np.random.rand(batch_size, seq_length, hidden_size)
-    input_tensor = torch.tensor(input_value, dtype=torch.float32)
+    query_tensor = torch.tensor(input_value, dtype=torch.float32)
     attention = Attention(hidden_size, n_position, config)
-    output = attention(input_tensor)
+    output = attention(query_tensor)
+
+
+    key_value = np.random.rand(batch_size, seq_length, hidden_size)
+    key_tensor = torch.tensor(key_value, dtype=torch.float32)
+    multihead1 = MultiheadAttention1(n_features=hidden_size, n_heads=12, dropout=0.1)
+    output1 = multihead1(query_tensor, key_tensor, key_tensor, padding_mask=None)
+
+
+    multihead_attention = MultiheadAttention(hidden_size, n_position, config)
+    output2 = multihead_attention(query_tensor, key_tensor, key_tensor)
