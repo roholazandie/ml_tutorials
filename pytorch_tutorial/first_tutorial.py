@@ -160,6 +160,17 @@ def masking():
 
     print(res)
 
+def addmm_test():
+    M = torch.randn(2, 3)
+    mat1 = torch.randn(2, 3)
+    mat2 = torch.randn(3, 3)
+    res = torch.addmm(M, mat1, mat2)
+
+    print(res)
+
+    res = torch.mm(mat1, mat2) + M
+    print(res)
+
 if __name__ == "__main__":
     #create_matrices()
     #operators()
@@ -174,4 +185,5 @@ if __name__ == "__main__":
     #split()
     #unsqueeze()
     #gather()
-    masking()
+    #masking()
+    addmm_test()

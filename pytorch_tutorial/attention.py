@@ -366,7 +366,6 @@ class MultiheadAttention1(nn.Module):
         return x
 
 
-
 if __name__ == "__main__":
     batch_size = 10 #B
     seq_length = 30 #F

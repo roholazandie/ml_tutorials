@@ -147,3 +147,5 @@ fabric.properties
 
 .idea/*
 data/*
+
+pytorch_tutorial/wandb/*
