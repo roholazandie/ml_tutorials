@@ -249,6 +249,8 @@ def mmm():
     p9, r9 = precision_recall(t9[1:,1:])
     p16, r16 = precision_recall(t16[1:,1:])
     p4, r4 = precision_recall(t4[1:,1:])
+
+    p11, r11 = precision_recall(tt11[1:, 1:])
     a=1
 
 
@@ -309,8 +311,116 @@ def conf_matrix():
     print(p16, r16)
     print(p15, r15)
 
+
+    cm = np.array([[941.,  17.,   3.,   0.,   1.,   0.],
+                [ 15.,  97.,   2.,   0.,   8.,   0.],
+                [  1.,   0.,  57.,   2.,   4.,   1.],
+                [  0.,   0.,   1.,  11.,   3.,   0.],
+                [  2.,   6.,   6.,   3.,  57.,   0.],
+                [  2.,   1.,   0.,   0.,   2.,   5.]])
+
+    all_sum = cm.sum()
+
+
+    # cm = np.array([[0.138, 0.187, 0.159, 0.130, 0.107, 0.279],
+    #                [0.159, 0.1, 0.143, 0.199, 0.255, 0.143],
+    #                [0.162, 0.122, 0.143, 0.288, 0.154, 0.132],
+    #                [0.145, 0.13, 0.298, 0.152, 0.120, 0.155],
+    #                [0.143, 0.292, 0.128, 0.138, 0.086, 0.213],
+    #                [0.241, 0.157, 0.151, 0.173, 0.117, 161]])
+    #
+    # p15, r15 = precision_recall(cm)
+
+    confusion_matrix = [[662, 14, 2, 1, 5, 0],
+                        [17, 77, 3, 0, 8, 2],
+                        [7, 4, 58, 2, 7, 1],
+                        [0, 0, 0, 1, 2, 0],
+                        [17, 7, 5, 3, 44, 1],
+                        [4, 1, 1, 1, 1, 3]]
+    p, r = precision_recall(confusion_matrix)
+    print(p, r)
+
+    confusion_matrix = np.array([[1647,  31,    6,    4,   13,    2],
+                         [39,  168,    3  ,  0 ,  10,    3],
+                         [24,    5,  134,    3,   13,    2],
+                         [6,    4,    4,   21,   15,    0],
+                         [34,   24,   15,   10,  109,    3],
+                         [6,   3,    4,    2,    1,   12]])
+
+    p, r = precision_recall(confusion_matrix)
+
+    print(p, r)
+
+
+    # confusion_matrix = np.array([[1661,  22,    7,    2,    8,    3],
+    #          [  51,  157,    3,    1 ,   7,    4],
+    #          [  27,    3,  134,    2,   12,    3],
+    #          [   7,    2,    2,   22,   15,    2],
+    #          [  53,   16,   12,    8,  102,    4],
+    #          [   8,    2,    4,    1,   1,   12]])
+    #
+    # p, r = precision_recall(confusion_matrix)
+    #
+    # print(p, r)
+
+    xlnet_confusion_matrix = np.array([[1650, 35, 8, 4, 5, 1],
+                        [42, 166, 3, 0, 9, 3],
+                        [25, 6, 131, 7, 11, 1],
+                        [5, 3, 1, 21, 20, 0],
+                        [28, 25, 15, 13, 108, 6],
+                        [7, 2, 2, 1, 2, 14]])
+
+    p, r = precision_recall(xlnet_confusion_matrix)
+    print(p, r)
+
+
+    x = np.array([[1649,   29   , 6 ,   3,   14,    2],
+         [  40,  166  ,  3 ,   2,    8,    4],
+         [  26 ,   5  ,129 ,   7,    8,    6],
+         [   5 ,   1  ,  3  , 28,   12,    1],
+         [  27 ,  29 ,  12 ,  14,  102,   11],
+         [   7 ,   3,    2,    1,    2,   13]])
+
+    p, r = precision_recall(x)
+    print(p, r)
+
+    xx = np.array([[1667 ,  17 ,  10 ,   3 ,   5 ,   1],
+             [  55 , 153 ,   6 ,   1 ,   6 ,   2],
+             [  28 ,   4 , 140 ,   1 ,   7 ,   1],
+             [   5 ,   2 ,   5 ,  19 ,  19 ,   0],
+             [  44 ,  20 ,  13 ,  10 , 105 ,   3],
+             [   7 ,   1 ,   4 ,   1 ,   2,   13]])
+
+    p, r = precision_recall(xx)
+    print(p, r)
+
+def correlation():
+    import ast
+    from sklearn.metrics import confusion_matrix
+    from scipy.stats import pearsonr
+    from sklearn.metrics import matthews_corrcoef
+    true_emotions = open("/home/rohola/codes/transfer-learning-conv-ai/out/first_sentence/true_emotions.txt").readline()
+    predicted_emotions_logs = open("/home/rohola/codes/transfer-learning-conv-ai/out/first_sentence/generated_emotion_logs.txt").readline()
+    predicted_emotions_logs14 = open("/home/rohola/codes/transfer-learning-conv-ai/out/generated_emotions_logs15.txt").readline()
+
+    true_emotions = ast.literal_eval(true_emotions)
+    predicted_emotions = ast.literal_eval(predicted_emotions_logs)
+    cm = confusion_matrix(true_emotions, predicted_emotions)
+    print(cm)
+    print("matthews_corrcoef: ", matthews_corrcoef(true_emotions, predicted_emotions))
+
+
+    predicted_emotions = ast.literal_eval(predicted_emotions_logs14)
+    cm = confusion_matrix(true_emotions, predicted_emotions)
+    print(cm)
+    print("matthews_corrcoef: ", matthews_corrcoef(true_emotions, predicted_emotions))
+
+
 if __name__ == "__main__":
     #try_cross_entropy_loss()
     #nll_loss()
     #mmm()
-    conf_matrix()
+    #conf_matrix()
+
+    correlation()
+

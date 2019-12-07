@@ -149,3 +149,6 @@ fabric.properties
 data/*
 
 pytorch_tutorial/wandb/*
+
+ignite_tutorial/models/*
+ignite_tutorial/MNIST
